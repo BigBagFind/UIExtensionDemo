@@ -10,12 +10,10 @@ import UIKit
 
 class AMAStrategyIntrodutionView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+    @IBOutlet weak var moreDetailButton: UIButton!  // 更多说明
+   
+    @IBOutlet weak var profitRateLabel: UILabel!    // 策略回报率
+    
+    
+    
 }
