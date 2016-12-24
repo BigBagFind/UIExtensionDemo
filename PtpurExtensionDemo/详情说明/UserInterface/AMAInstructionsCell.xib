@@ -22,14 +22,18 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J9I-Yf-MGx">
                         <rect key="frame" x="0.0" y="0.0" width="280" height="151"/>
                         <color key="backgroundColor" red="0.43922644853591919" green="0.97386795282363892" blue="0.56781059503555298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                        </accessibility>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2e-w1-9jb">
-                        <rect key="frame" x="0.0" y="298" width="280" height="38"/>
+                        <rect key="frame" x="0.0" y="296" width="280" height="40"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8026273544520548" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="38" id="sKP-rD-Cdc"/>
+                            <constraint firstAttribute="height" constant="40" id="sKP-rD-Cdc"/>
                         </constraints>
-                        <state key="normal" title="我知道了" backgroundImage="white_bg.png">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="我知道了">
                             <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                         <state key="highlighted">
@@ -37,7 +41,7 @@
                         </state>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpw-97-qes">
-                        <rect key="frame" x="0.0" y="297.5" width="280" height="0.5"/>
+                        <rect key="frame" x="0.0" y="295.5" width="280" height="0.5"/>
                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="yab-bT-YCJ"/>
@@ -50,7 +54,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="区间收益/区间内的平均绑定资金。（例：11月1日-12月1日，账户获利1万元，账户平均绑定资金10万元，则区间收益率=1/10=10%）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7m-1R-pTU">
-                        <rect key="frame" x="10" y="188" width="260" height="62.5"/>
+                        <rect key="frame" x="10" y="186" width="260" height="62.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -67,7 +71,7 @@
                 <constraint firstItem="CJ0-eQ-V9Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="OEI-Aw-Rfq"/>
                 <constraint firstItem="Tpw-97-qes" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YIg-65-Tau"/>
                 <constraint firstItem="J9I-Yf-MGx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="edD-9R-iuH"/>
-                <constraint firstItem="q7m-1R-pTU" firstAttribute="top" secondItem="CJ0-eQ-V9Q" secondAttribute="bottom" constant="10" id="hfm-HC-p5W"/>
+                <constraint firstItem="q7m-1R-pTU" firstAttribute="top" secondItem="CJ0-eQ-V9Q" secondAttribute="bottom" constant="8" id="hfm-HC-p5W"/>
                 <constraint firstAttribute="trailing" secondItem="q7m-1R-pTU" secondAttribute="trailing" constant="10" id="kOc-UR-Ze6"/>
                 <constraint firstItem="D2e-w1-9jb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lYA-97-kQF"/>
                 <constraint firstItem="D2e-w1-9jb" firstAttribute="top" secondItem="Tpw-97-qes" secondAttribute="bottom" id="lxh-3n-Sh3"/>
@@ -85,7 +89,4 @@
             <point key="canvasLocation" x="-55.5" y="61.5"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="white_bg.png" width="100" height="100"/>
-    </resources>
 </document>

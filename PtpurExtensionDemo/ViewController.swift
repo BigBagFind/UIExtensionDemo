@@ -13,11 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let view = AMAInstructionsView()
+       
+    }
+
+    
+    @IBAction func showInstrutions(_ sender: Any) {
+        let view = AMAInstructionsView(viewModel: AMAInstructionsViewModel.init(pageIndex: 7))
         view.frame = self.view.bounds
         self.view.addSubview(view)
     }
-
   
 
 
