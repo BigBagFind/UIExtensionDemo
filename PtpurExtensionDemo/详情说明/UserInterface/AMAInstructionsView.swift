@@ -35,7 +35,6 @@ class AMAInstructionsView: UIView, UICollectionViewDataSource, UICollectionViewD
         super.init(frame: .zero)
         self.customInitalizer()
         self.layoutViews()
-        self.otherInitalizer()
         self.showAnimation()
     }
     
@@ -103,15 +102,6 @@ class AMAInstructionsView: UIView, UICollectionViewDataSource, UICollectionViewD
         }
     }
     
-    func otherInitalizer() {
-        
-       // self.collectionView.scrollToItem(at: IndexPath(item: self.viewModel.initPageIndex, section: 0), at: .centeredHorizontally, animated: false)
-       // self.collectionView.setContentOffset(CGPoint(x: ItemWidth * Double(self.viewModel.initPageIndex), y: 0), animated: false)
-      //  self.collectionView.selectItem(at: IndexPath(item: self.viewModel.initPageIndex, section: 0), animated: false, scrollPosition: .centeredHorizontally)
-      //  self.pageControl.currentPage = self.viewModel.initPageIndex
-
-    }
-
     //MARK:- CollectionViewDelegate
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return NumberOfPages
@@ -128,7 +118,9 @@ class AMAInstructionsView: UIView, UICollectionViewDataSource, UICollectionViewD
         self.pageControl.currentPage = self.viewModel.pageControlCurrentIndex(offsetX: Double(collectionView.contentOffset.x))
     }
  
+    //Mark:- Animaition
     func dismissAction(_ sender: UIButton) {
+        self.pageControl.layer.setValue("0.5", forKey: "opacity")
         UIView.animate(withDuration: AnimationInterval, animations: {
             self.collectionView.layer.setAffineTransform(CGAffineTransform(scaleX: 0.1,y: 0.1))
             self.layer.setValue("0.0", forKey: "opacity")
