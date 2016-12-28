@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		810C7E181E0ED817000C1B0F /* AMAInstructionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C7E171E0ED817000C1B0F /* AMAInstructionFlowLayout.swift */; };
+		813C61B81E14120C00D31A72 /* AMAViewAnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813C61B71E14120C00D31A72 /* AMAViewAnimationExtension.swift */; };
+		813C61BB1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813C61BA1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift */; };
 		8175AD581E0AE3C300FBE38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD571E0AE3C300FBE38A /* AppDelegate.swift */; };
 		8175AD5A1E0AE3C300FBE38A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD591E0AE3C300FBE38A /* ViewController.swift */; };
 		8175AD5D1E0AE3C300FBE38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8175AD5B1E0AE3C300FBE38A /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 		8182B4BD1E0EA42700D3A9CB /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BC1E0EA42700D3A9CB /* 1.png */; };
 		8182B4C01E0EA42C00D3A9CB /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BE1E0EA42C00D3A9CB /* 3.png */; };
 		8182B4C11E0EA42C00D3A9CB /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BF1E0EA42C00D3A9CB /* 4.png */; };
+		81E73FF71E11679400BC885F /* AMAMoreInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E73FF61E11679400BC885F /* AMAMoreInstructionsView.swift */; };
+		81E73FF91E11699900BC885F /* AMAMoreInstructionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E73FF81E11699900BC885F /* AMAMoreInstructionsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,8 @@
 
 /* Begin PBXFileReference section */
 		810C7E171E0ED817000C1B0F /* AMAInstructionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAInstructionFlowLayout.swift; sourceTree = "<group>"; };
+		813C61B71E14120C00D31A72 /* AMAViewAnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAViewAnimationExtension.swift; sourceTree = "<group>"; };
+		813C61BA1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAMoreInstructionInteractor.swift; sourceTree = "<group>"; };
 		8175AD541E0AE3C300FBE38A /* PtpurExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PtpurExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8175AD571E0AE3C300FBE38A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8175AD591E0AE3C300FBE38A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +155,8 @@
 		8182B4BC1E0EA42700D3A9CB /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		8182B4BE1E0EA42C00D3A9CB /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		8182B4BF1E0EA42C00D3A9CB /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		81E73FF61E11679400BC885F /* AMAMoreInstructionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAMoreInstructionsView.swift; sourceTree = "<group>"; };
+		81E73FF81E11699900BC885F /* AMAMoreInstructionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMAMoreInstructionsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +184,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		813C61B61E14120C00D31A72 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				813C61B71E14120C00D31A72 /* AMAViewAnimationExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		813C61B91E1412D100D31A72 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				813C61BA1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		8175AD4B1E0AE3C200FBE38A = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +233,7 @@
 				8182B4BA1E0EA3D000D3A9CB /* 2.png */,
 				8182B4BE1E0EA42C00D3A9CB /* 3.png */,
 				8182B4BF1E0EA42C00D3A9CB /* 4.png */,
+				81E73FF21E11677300BC885F /* 更多说明 */,
 				8182B49F1E0E9AD200D3A9CB /* 详情说明 */,
 				8175AD5B1E0AE3C300FBE38A /* Main.storyboard */,
 				8175AD5E1E0AE3C300FBE38A /* Assets.xcassets */,
@@ -344,6 +369,33 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		81E73FF21E11677300BC885F /* 更多说明 */ = {
+			isa = PBXGroup;
+			children = (
+				813C61B91E1412D100D31A72 /* Interactor */,
+				81E73FF41E11677300BC885F /* UserInterface */,
+				81E73FF31E11677300BC885F /* DisplayData */,
+				813C61B61E14120C00D31A72 /* Extension */,
+			);
+			path = "更多说明";
+			sourceTree = "<group>";
+		};
+		81E73FF31E11677300BC885F /* DisplayData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DisplayData;
+			sourceTree = "<group>";
+		};
+		81E73FF41E11677300BC885F /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				81E73FF61E11679400BC885F /* AMAMoreInstructionsView.swift */,
+				81E73FF81E11699900BC885F /* AMAMoreInstructionsView.xib */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -458,6 +510,7 @@
 				8182B4AE1E0E9AD200D3A9CB /* AMAInstructions.plist in Resources */,
 				8175AD5F1E0AE3C300FBE38A /* Assets.xcassets in Resources */,
 				8182B4B01E0E9AD200D3A9CB /* AMAInstructionsCell.xib in Resources */,
+				81E73FF91E11699900BC885F /* AMAMoreInstructionsView.xib in Resources */,
 				8182B4C11E0EA42C00D3A9CB /* 4.png in Resources */,
 				8175AD5D1E0AE3C300FBE38A /* Main.storyboard in Resources */,
 				8175ADCC1E0C267A00FBE38A /* Info.plist in Resources */,
@@ -503,9 +556,12 @@
 				8182B4B91E0EA34700D3A9CB /* AMAInstructionEntity.swift in Sources */,
 				8175ADC51E0C267A00FBE38A /* ConstraintPriorityTarget.swift in Sources */,
 				8175AD581E0AE3C300FBE38A /* AppDelegate.swift in Sources */,
+				813C61BB1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift in Sources */,
 				810C7E181E0ED817000C1B0F /* AMAInstructionFlowLayout.swift in Sources */,
 				8175ADBB1E0C267A00FBE38A /* ConstraintLayoutSupport.swift in Sources */,
 				8182B4AF1E0E9AD200D3A9CB /* AMAInstructionsCell.swift in Sources */,
+				813C61B81E14120C00D31A72 /* AMAViewAnimationExtension.swift in Sources */,
+				81E73FF71E11679400BC885F /* AMAMoreInstructionsView.swift in Sources */,
 				8175ADC61E0C267A00FBE38A /* ConstraintRelatableTarget.swift in Sources */,
 				8175ADCD1E0C267A00FBE38A /* LayoutConstraint.swift in Sources */,
 				8175ADBD1E0C267A00FBE38A /* ConstraintMaker.swift in Sources */,
