@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QcE-0o-Q3r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,44 +9,108 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--3-->
+        <scene sceneID="kEf-yC-2Gh">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PtpurExtensionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="Y1h-IC-JDE" customClass="SMSNavViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="3" id="g2b-HI-YWU"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="1.png" id="tr8-zy-q9j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.92870026826858521" blue="0.4538414478302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYF-qr-qdP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1996" y="-29"/>
+        </scene>
+        <!--2-->
+        <scene sceneID="Eey-Vp-UCq">
+            <objects>
+                <viewController id="hbe-B2-MUu" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Xqy-oS-2Ke"/>
+                        <viewControllerLayoutGuide type="bottom" id="UTp-zL-uiU"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="KjX-xM-Jgr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="2" id="cQN-Au-CWZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeW-1c-XPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1996" y="-676"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mit-hE-JsO">
+            <objects>
+                <tabBarController id="QcE-0o-Q3r" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="398-FS-Jxl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hbe-B2-MUu" kind="relationship" relationship="viewControllers" id="9yh-kT-iQC"/>
+                        <segue destination="Vtv-L7-TSg" kind="relationship" relationship="viewControllers" id="L9v-MN-Qpq"/>
+                        <segue destination="Y1h-IC-JDE" kind="relationship" relationship="viewControllers" id="9fL-6L-de1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vEQ-d8-R6Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3468" y="-291"/>
+        </scene>
+        <!--1-->
+        <scene sceneID="tZQ-8W-6Dg">
+            <objects>
+                <navigationController id="Vtv-L7-TSg" customClass="SMSNavViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="1" id="XSh-U2-Jyl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8XH-Kd-beM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sxj-Ft-kLy" kind="relationship" relationship="rootViewController" id="QhV-OL-CXu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LqL-kf-vgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1996" y="-1346"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hAs-2u-K21">
+            <objects>
+                <viewController id="sxj-Ft-kLy" customClass="SMSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cQ5-6k-S0G"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Bg-Tb-3Wa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Otw-22-FtY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lL2-Jz-WLu">
-                                <rect key="frame" x="98" y="96" width="178" height="95"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2d-mZ-LIJ">
+                                <rect key="frame" x="121" y="131" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="showInstrutions:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXJ-Vn-ZXa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxp-G1-cRQ">
-                                <rect key="frame" x="98" y="227" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="showMore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nlp-7t-sbL"/>
+                                    <action selector="smsAction:" destination="sxj-Ft-kLy" eventType="touchUpInside" id="F63-Ga-G2y"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="showMore" destination="Mxp-G1-cRQ" id="Rqa-js-9eR"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="UJ4-EM-Wzy"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="slD-g1-5JX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="111.99400299850076"/>
+            <point key="canvasLocation" x="-1225" y="-1049"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1.png" width="128" height="128"/>
+    </resources>
 </document>

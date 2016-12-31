@@ -10,6 +10,9 @@
 		810C7E181E0ED817000C1B0F /* AMAInstructionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810C7E171E0ED817000C1B0F /* AMAInstructionFlowLayout.swift */; };
 		813C61B81E14120C00D31A72 /* AMAViewAnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813C61B71E14120C00D31A72 /* AMAViewAnimationExtension.swift */; };
 		813C61BB1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813C61BA1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift */; };
+		813C61BF1E1561BF00D31A72 /* SMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813C61BE1E1561BF00D31A72 /* SMSViewController.m */; };
+		813C61C21E15660100D31A72 /* AMASchemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 813C61C11E15660100D31A72 /* AMASchemeManager.m */; };
+		813C61C51E156AD400D31A72 /* SMSNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813C61C41E156AD400D31A72 /* SMSNavViewController.m */; };
 		8175AD581E0AE3C300FBE38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD571E0AE3C300FBE38A /* AppDelegate.swift */; };
 		8175AD5A1E0AE3C300FBE38A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD591E0AE3C300FBE38A /* ViewController.swift */; };
 		8175AD5D1E0AE3C300FBE38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8175AD5B1E0AE3C300FBE38A /* Main.storyboard */; };
@@ -66,6 +69,7 @@
 		8182B4BD1E0EA42700D3A9CB /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BC1E0EA42700D3A9CB /* 1.png */; };
 		8182B4C01E0EA42C00D3A9CB /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BE1E0EA42C00D3A9CB /* 3.png */; };
 		8182B4C11E0EA42C00D3A9CB /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BF1E0EA42C00D3A9CB /* 4.png */; };
+		81CB88F61E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		81E73FF71E11679400BC885F /* AMAMoreInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E73FF61E11679400BC885F /* AMAMoreInstructionsView.swift */; };
 		81E73FF91E11699900BC885F /* AMAMoreInstructionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E73FF81E11699900BC885F /* AMAMoreInstructionsView.xib */; };
 /* End PBXBuildFile section */
@@ -91,6 +95,13 @@
 		810C7E171E0ED817000C1B0F /* AMAInstructionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAInstructionFlowLayout.swift; sourceTree = "<group>"; };
 		813C61B71E14120C00D31A72 /* AMAViewAnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAViewAnimationExtension.swift; sourceTree = "<group>"; };
 		813C61BA1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAMoreInstructionInteractor.swift; sourceTree = "<group>"; };
+		813C61BC1E1561BE00D31A72 /* PtpurExtensionDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PtpurExtensionDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		813C61BD1E1561BF00D31A72 /* SMSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSViewController.h; sourceTree = "<group>"; };
+		813C61BE1E1561BF00D31A72 /* SMSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSViewController.m; sourceTree = "<group>"; };
+		813C61C01E15660100D31A72 /* AMASchemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMASchemeManager.h; sourceTree = "<group>"; };
+		813C61C11E15660100D31A72 /* AMASchemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMASchemeManager.m; sourceTree = "<group>"; };
+		813C61C31E156AD400D31A72 /* SMSNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSNavViewController.h; sourceTree = "<group>"; };
+		813C61C41E156AD400D31A72 /* SMSNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSNavViewController.m; sourceTree = "<group>"; };
 		8175AD541E0AE3C300FBE38A /* PtpurExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PtpurExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8175AD571E0AE3C300FBE38A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8175AD591E0AE3C300FBE38A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +166,8 @@
 		8182B4BC1E0EA42700D3A9CB /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		8182B4BE1E0EA42C00D3A9CB /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		8182B4BF1E0EA42C00D3A9CB /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		81CB88F41E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "Source/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FDFullscreenPopGesture.m"; path = "Source/UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		81E73FF61E11679400BC885F /* AMAMoreInstructionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAMoreInstructionsView.swift; sourceTree = "<group>"; };
 		81E73FF81E11699900BC885F /* AMAMoreInstructionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMAMoreInstructionsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -225,8 +238,16 @@
 			children = (
 				8175AD8C1E0C267A00FBE38A /* Source */,
 				8175AD8B1E0C254500FBE38A /* PrefixHeader.pch */,
+				81CB88F41E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.h */,
+				81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */,
 				8175AD571E0AE3C300FBE38A /* AppDelegate.swift */,
 				8175AD591E0AE3C300FBE38A /* ViewController.swift */,
+				813C61BD1E1561BF00D31A72 /* SMSViewController.h */,
+				813C61BE1E1561BF00D31A72 /* SMSViewController.m */,
+				813C61C31E156AD400D31A72 /* SMSNavViewController.h */,
+				813C61C41E156AD400D31A72 /* SMSNavViewController.m */,
+				813C61C01E15660100D31A72 /* AMASchemeManager.h */,
+				813C61C11E15660100D31A72 /* AMASchemeManager.m */,
 				8175AD851E0AE45800FBE38A /* AMAStrategyIntrodutionView.swift */,
 				8175AD871E0AE46800FBE38A /* AMAStrategyIntrodutionView.xib */,
 				8182B4BC1E0EA42700D3A9CB /* 1.png */,
@@ -239,6 +260,7 @@
 				8175AD5E1E0AE3C300FBE38A /* Assets.xcassets */,
 				8175AD601E0AE3C300FBE38A /* LaunchScreen.storyboard */,
 				8175AD631E0AE3C300FBE38A /* Info.plist */,
+				813C61BC1E1561BE00D31A72 /* PtpurExtensionDemo-Bridging-Header.h */,
 			);
 			path = PtpurExtensionDemo;
 			sourceTree = "<group>";
@@ -465,6 +487,7 @@
 					8175AD531E0AE3C300FBE38A = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = F7JN2J2BY4;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					8175AD671E0AE3C300FBE38A = {
@@ -540,6 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81CB88F61E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				8175ADC71E0C267A00FBE38A /* ConstraintRelation.swift in Sources */,
 				8175AD5A1E0AE3C300FBE38A /* ViewController.swift in Sources */,
 				8175ADCE1E0C267A00FBE38A /* LayoutConstraintItem.swift in Sources */,
@@ -566,12 +590,15 @@
 				8175ADCD1E0C267A00FBE38A /* LayoutConstraint.swift in Sources */,
 				8175ADBD1E0C267A00FBE38A /* ConstraintMaker.swift in Sources */,
 				8175ADB01E0C267A00FBE38A /* ConstraintAttributes.swift in Sources */,
+				813C61C51E156AD400D31A72 /* SMSNavViewController.m in Sources */,
 				8175ADCF1E0C267A00FBE38A /* UILayoutSupport+Extensions.swift in Sources */,
 				8175ADB41E0C267A00FBE38A /* ConstraintDSL.swift in Sources */,
 				8175ADBC1E0C267A00FBE38A /* ConstraintLayoutSupportDSL.swift in Sources */,
+				813C61C21E15660100D31A72 /* AMASchemeManager.m in Sources */,
 				8175ADB51E0C267A00FBE38A /* ConstraintInsets.swift in Sources */,
 				8182B4B11E0E9AD200D3A9CB /* AMAInstructionsHitView.swift in Sources */,
 				8175ADC11E0C267A00FBE38A /* ConstraintMakerPriortizable.swift in Sources */,
+				813C61BF1E1561BF00D31A72 /* SMSViewController.m in Sources */,
 				8175ADBE1E0C267A00FBE38A /* ConstraintMakerEditable.swift in Sources */,
 				8175ADB11E0C267A00FBE38A /* ConstraintConfig.swift in Sources */,
 				8175ADCA1E0C267A00FBE38A /* ConstraintViewDSL.swift in Sources */,
@@ -738,12 +765,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F7JN2J2BY4;
 				GCC_PREFIX_HEADER = ./PtpurExtensionDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = PtpurExtensionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CoderTgg.PtpurExtensionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PtpurExtensionDemo/PtpurExtensionDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -752,12 +782,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = F7JN2J2BY4;
 				GCC_PREFIX_HEADER = ./PtpurExtensionDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = PtpurExtensionDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CoderTgg.PtpurExtensionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PtpurExtensionDemo/PtpurExtensionDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

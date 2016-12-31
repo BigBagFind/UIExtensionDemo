@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let view = AMAMoreInstructionsView.initFromNib()
+//        let view = AMAMoreInstructions
+        //UIView.initFromNib()
 //        view.frame = self.view.bounds
 //        self.view.addSubview(view)
     }
@@ -20,10 +21,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var showMore: UIButton!
     
     @IBAction func showMore(_ sender: Any) {
-        AMAMoreInstructionInteractor.showMoreInstructionView()
+        
+      //  AMAMoreInstructionInteractor.showMoreInstructionView()
     }
     
     @IBAction func showInstrutions(_ sender: Any) {
+        
+        
         let view = AMAInstructionsView(viewModel: AMAInstructionsViewModel.init(pageIndex: 7))
         view.frame = self.view.bounds
         self.view.addSubview(view)
