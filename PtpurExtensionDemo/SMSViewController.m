@@ -15,6 +15,22 @@
 @end
 
 @implementation SMSViewController
+
+
+/**
+ *  版本比对
+ *
+ *  @param oldver 老的版本
+ *  @param newver 心的版本
+ *
+ *  @return  是否更新Bool
+ */
++ (BOOL)tggVersion:(NSString *)oldver lessthan:(NSString *)newver{
+    return [oldver compare:newver options:NSCaseInsensitiveSearch] == NSOrderedAscending ? YES : NO;
+}
+
+
+
 - (IBAction)smsAction:(id)sender {
     [[AMASchemeManager shareManager] smsWithViewController:self];
    // [self showMessageView];
@@ -24,6 +40,8 @@
     [super viewDidLoad];
     self.title = @"navTitle";
     self.tabBarItem.title = @"..";
+    
+    
 }
 
 - (void)showMessageView

@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="Y1h-IC-JDE" customClass="SMSNavViewController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="3" id="g2b-HI-YWU"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="1.png" id="tr8-zy-q9j">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="1.png" id="tr8-zy-q9j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="0.92870026826858521" blue="0.4538414478302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -28,7 +28,7 @@
         <!--2-->
         <scene sceneID="Eey-Vp-UCq">
             <objects>
-                <viewController id="hbe-B2-MUu" sceneMemberID="viewController">
+                <viewController id="hbe-B2-MUu" customClass="ViewController" customModule="PtpurExtensionDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xqy-oS-2Ke"/>
                         <viewControllerLayoutGuide type="bottom" id="UTp-zL-uiU"/>
@@ -36,13 +36,26 @@
                     <view key="view" contentMode="scaleToFill" id="KjX-xM-Jgr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt7-ad-oOS">
+                                <rect key="frame" x="109" y="75" width="204" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="checkUpdate"/>
+                                <connections>
+                                    <action selector="action:" destination="hbe-B2-MUu" eventType="touchUpInside" id="WWu-Up-hi2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="2" id="cQN-Au-CWZ"/>
+                    <connections>
+                        <outlet property="checkAction" destination="pt7-ad-oOS" id="YFJ-uF-Yhp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oeW-1c-XPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1996" y="-676"/>
+            <point key="canvasLocation" x="-1996" y="-676.01199400299856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="mit-hE-JsO">

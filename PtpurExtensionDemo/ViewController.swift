@@ -16,10 +16,20 @@ class ViewController: UIViewController {
         //UIView.initFromNib()
 //        view.frame = self.view.bounds
 //        self.view.addSubview(view)
+        
+        //AMAVersionInteractor.showLatestUpdateView(selectedBlock: nil)
+        
+      //  AMAVersionManager.defaultManager.checkVersionUpdateManually(at: self)
+        
     }
 
+    @IBAction func action(_ sender: Any) {
+        
+        AMAVersionManager.defaultManager.checkVersionUpdateManually(at: self)
+    }
     @IBOutlet weak var showMore: UIButton!
     
+    @IBOutlet weak var checkAction: UIButton!
     @IBAction func showMore(_ sender: Any) {
         
       //  AMAMoreInstructionInteractor.showMoreInstructionView()

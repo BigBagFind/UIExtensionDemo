@@ -13,6 +13,11 @@
 		813C61BF1E1561BF00D31A72 /* SMSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813C61BE1E1561BF00D31A72 /* SMSViewController.m */; };
 		813C61C21E15660100D31A72 /* AMASchemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 813C61C11E15660100D31A72 /* AMASchemeManager.m */; };
 		813C61C51E156AD400D31A72 /* SMSNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 813C61C41E156AD400D31A72 /* SMSNavViewController.m */; };
+		8145C6E71E18E89F0054086A /* AMAVersionLocalRecordAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145C6E61E18E89F0054086A /* AMAVersionLocalRecordAgent.swift */; };
+		8151F6101E18065700110C15 /* AMAVersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151F60F1E18065700110C15 /* AMAVersionManager.swift */; };
+		8151F6121E18068500110C15 /* AMAVersionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151F6111E18068500110C15 /* AMAVersionService.swift */; };
+		8151F6141E18069700110C15 /* AMAVersionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151F6131E18069700110C15 /* AMAVersionInteractor.swift */; };
+		815D0A591E1946A0000136C3 /* UIViewController+TggAlertExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D0A581E1946A0000136C3 /* UIViewController+TggAlertExtension.m */; };
 		8175AD581E0AE3C300FBE38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD571E0AE3C300FBE38A /* AppDelegate.swift */; };
 		8175AD5A1E0AE3C300FBE38A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD591E0AE3C300FBE38A /* ViewController.swift */; };
 		8175AD5D1E0AE3C300FBE38A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8175AD5B1E0AE3C300FBE38A /* Main.storyboard */; };
@@ -102,6 +107,12 @@
 		813C61C11E15660100D31A72 /* AMASchemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMASchemeManager.m; sourceTree = "<group>"; };
 		813C61C31E156AD400D31A72 /* SMSNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSNavViewController.h; sourceTree = "<group>"; };
 		813C61C41E156AD400D31A72 /* SMSNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSNavViewController.m; sourceTree = "<group>"; };
+		8145C6E61E18E89F0054086A /* AMAVersionLocalRecordAgent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAVersionLocalRecordAgent.swift; sourceTree = "<group>"; };
+		8151F60F1E18065700110C15 /* AMAVersionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAVersionManager.swift; sourceTree = "<group>"; };
+		8151F6111E18068500110C15 /* AMAVersionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAVersionService.swift; sourceTree = "<group>"; };
+		8151F6131E18069700110C15 /* AMAVersionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAVersionInteractor.swift; sourceTree = "<group>"; };
+		815D0A571E1946A0000136C3 /* UIViewController+TggAlertExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TggAlertExtension.h"; sourceTree = "<group>"; };
+		815D0A581E1946A0000136C3 /* UIViewController+TggAlertExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TggAlertExtension.m"; sourceTree = "<group>"; };
 		8175AD541E0AE3C300FBE38A /* PtpurExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PtpurExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8175AD571E0AE3C300FBE38A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8175AD591E0AE3C300FBE38A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +224,17 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		8151F60E1E18047200110C15 /* 版本升级 */ = {
+			isa = PBXGroup;
+			children = (
+				8151F60F1E18065700110C15 /* AMAVersionManager.swift */,
+				8151F6111E18068500110C15 /* AMAVersionService.swift */,
+				8151F6131E18069700110C15 /* AMAVersionInteractor.swift */,
+				8145C6E61E18E89F0054086A /* AMAVersionLocalRecordAgent.swift */,
+			);
+			path = "版本升级";
+			sourceTree = "<group>";
+		};
 		8175AD4B1E0AE3C200FBE38A = {
 			isa = PBXGroup;
 			children = (
@@ -237,11 +259,14 @@
 			isa = PBXGroup;
 			children = (
 				8175AD8C1E0C267A00FBE38A /* Source */,
-				8175AD8B1E0C254500FBE38A /* PrefixHeader.pch */,
-				81CB88F41E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.h */,
-				81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */,
+				8151F60E1E18047200110C15 /* 版本升级 */,
 				8175AD571E0AE3C300FBE38A /* AppDelegate.swift */,
 				8175AD591E0AE3C300FBE38A /* ViewController.swift */,
+				8175AD8B1E0C254500FBE38A /* PrefixHeader.pch */,
+				815D0A571E1946A0000136C3 /* UIViewController+TggAlertExtension.h */,
+				815D0A581E1946A0000136C3 /* UIViewController+TggAlertExtension.m */,
+				81CB88F41E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.h */,
+				81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */,
 				813C61BD1E1561BF00D31A72 /* SMSViewController.h */,
 				813C61BE1E1561BF00D31A72 /* SMSViewController.m */,
 				813C61C31E156AD400D31A72 /* SMSNavViewController.h */,
@@ -569,11 +594,14 @@
 				8175ADCE1E0C267A00FBE38A /* LayoutConstraintItem.swift in Sources */,
 				8175ADB61E0C267A00FBE38A /* ConstraintInsetTarget.swift in Sources */,
 				8182B4B61E0E9F6200D3A9CB /* AMAInstructionConst.swift in Sources */,
+				8151F6141E18069700110C15 /* AMAVersionInteractor.swift in Sources */,
 				8175ADC21E0C267A00FBE38A /* ConstraintMakerRelatable.swift in Sources */,
 				8182B4B21E0E9AD200D3A9CB /* AMAInstructionsView.swift in Sources */,
 				8175ADCB1E0C267A00FBE38A /* Debugging.swift in Sources */,
 				8175ADB71E0C267A00FBE38A /* ConstraintItem.swift in Sources */,
 				8175ADC81E0C267A00FBE38A /* ConstraintView+Extensions.swift in Sources */,
+				8151F6101E18065700110C15 /* AMAVersionManager.swift in Sources */,
+				8151F6121E18068500110C15 /* AMAVersionService.swift in Sources */,
 				8175ADC41E0C267A00FBE38A /* ConstraintOffsetTarget.swift in Sources */,
 				8175AD861E0AE45800FBE38A /* AMAStrategyIntrodutionView.swift in Sources */,
 				8175ADC01E0C267A00FBE38A /* ConstraintMakerFinalizable.swift in Sources */,
@@ -585,10 +613,12 @@
 				8175ADBB1E0C267A00FBE38A /* ConstraintLayoutSupport.swift in Sources */,
 				8182B4AF1E0E9AD200D3A9CB /* AMAInstructionsCell.swift in Sources */,
 				813C61B81E14120C00D31A72 /* AMAViewAnimationExtension.swift in Sources */,
+				8145C6E71E18E89F0054086A /* AMAVersionLocalRecordAgent.swift in Sources */,
 				81E73FF71E11679400BC885F /* AMAMoreInstructionsView.swift in Sources */,
 				8175ADC61E0C267A00FBE38A /* ConstraintRelatableTarget.swift in Sources */,
 				8175ADCD1E0C267A00FBE38A /* LayoutConstraint.swift in Sources */,
 				8175ADBD1E0C267A00FBE38A /* ConstraintMaker.swift in Sources */,
+				815D0A591E1946A0000136C3 /* UIViewController+TggAlertExtension.m in Sources */,
 				8175ADB01E0C267A00FBE38A /* ConstraintAttributes.swift in Sources */,
 				813C61C51E156AD400D31A72 /* SMSNavViewController.m in Sources */,
 				8175ADCF1E0C267A00FBE38A /* UILayoutSupport+Extensions.swift in Sources */,

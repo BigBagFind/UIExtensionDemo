@@ -55,14 +55,13 @@
     switch ( result ) {
             
         case MessageComposeResultCancelled:
-            
             [self alertWithTitle:@"提示信息" msg:@"发送取消"];
             break;
         case MessageComposeResultFailed:// send failed
-            [self alertWithTitle:@"提示信息" msg:@"发送成功"];
+            [self alertWithTitle:@"提示信息" msg:@"发送失败"];
             break;
         case MessageComposeResultSent:
-            [self alertWithTitle:@"提示信息" msg:@"发送失败"];
+            [self alertWithTitle:@"提示信息" msg:@"发送成功"];
             break;
         default:
             break;
