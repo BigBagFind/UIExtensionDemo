@@ -60,6 +60,7 @@
 		8175ADCD1E0C267A00FBE38A /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175ADAB1E0C267A00FBE38A /* LayoutConstraint.swift */; };
 		8175ADCE1E0C267A00FBE38A /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175ADAC1E0C267A00FBE38A /* LayoutConstraintItem.swift */; };
 		8175ADCF1E0C267A00FBE38A /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175ADAE1E0C267A00FBE38A /* UILayoutSupport+Extensions.swift */; };
+		8178222F1E1D42FE007D965B /* CurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8178222E1E1D42FE007D965B /* CurveView.m */; };
 		8182B4AD1E0E9AD200D3A9CB /* AMAInstructionDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182B4A11E0E9AD200D3A9CB /* AMAInstructionDisplayData.swift */; };
 		8182B4AE1E0E9AD200D3A9CB /* AMAInstructions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4A31E0E9AD200D3A9CB /* AMAInstructions.plist */; };
 		8182B4AF1E0E9AD200D3A9CB /* AMAInstructionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8182B4A51E0E9AD200D3A9CB /* AMAInstructionsCell.swift */; };
@@ -163,6 +164,8 @@
 		8175ADAC1E0C267A00FBE38A /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		8175ADAD1E0C267A00FBE38A /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
 		8175ADAE1E0C267A00FBE38A /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		8178222D1E1D42FE007D965B /* CurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurveView.h; sourceTree = "<group>"; };
+		8178222E1E1D42FE007D965B /* CurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurveView.m; sourceTree = "<group>"; };
 		8182B4A11E0E9AD200D3A9CB /* AMAInstructionDisplayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAInstructionDisplayData.swift; sourceTree = "<group>"; };
 		8182B4A31E0E9AD200D3A9CB /* AMAInstructions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AMAInstructions.plist; sourceTree = "<group>"; };
 		8182B4A51E0E9AD200D3A9CB /* AMAInstructionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAInstructionsCell.swift; sourceTree = "<group>"; };
@@ -260,6 +263,8 @@
 			children = (
 				8175AD8C1E0C267A00FBE38A /* Source */,
 				8151F60E1E18047200110C15 /* 版本升级 */,
+				8178222D1E1D42FE007D965B /* CurveView.h */,
+				8178222E1E1D42FE007D965B /* CurveView.m */,
 				8175AD571E0AE3C300FBE38A /* AppDelegate.swift */,
 				8175AD591E0AE3C300FBE38A /* ViewController.swift */,
 				8175AD8B1E0C254500FBE38A /* PrefixHeader.pch */,
@@ -631,6 +636,7 @@
 				813C61BF1E1561BF00D31A72 /* SMSViewController.m in Sources */,
 				8175ADBE1E0C267A00FBE38A /* ConstraintMakerEditable.swift in Sources */,
 				8175ADB11E0C267A00FBE38A /* ConstraintConfig.swift in Sources */,
+				8178222F1E1D42FE007D965B /* CurveView.m in Sources */,
 				8175ADCA1E0C267A00FBE38A /* ConstraintViewDSL.swift in Sources */,
 				8182B4B31E0E9AD200D3A9CB /* AMAUIColorExtension.swift in Sources */,
 				8175ADB91E0C267A00FBE38A /* ConstraintLayoutGuide.swift in Sources */,
