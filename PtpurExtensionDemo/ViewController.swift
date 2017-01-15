@@ -24,6 +24,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func action(_ sender: Any) {
+       /*
+        AMAPickerViewInteractor *interactor = [AMAPickerViewInteractor interactorWithViewModel:[[AMAPickerViewViewModel alloc] initWithDataSource:@[]]];
+        [interactor presentPickerView];
+        interactor.pickerView.delegate = self;
+ */
+        
         
         AMAVersionManager.defaultManager.checkVersionUpdateManually(at: self)
     }

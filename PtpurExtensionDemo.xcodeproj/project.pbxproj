@@ -17,6 +17,11 @@
 		8151F6101E18065700110C15 /* AMAVersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151F60F1E18065700110C15 /* AMAVersionManager.swift */; };
 		8151F6121E18068500110C15 /* AMAVersionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151F6111E18068500110C15 /* AMAVersionService.swift */; };
 		8151F6141E18069700110C15 /* AMAVersionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8151F6131E18069700110C15 /* AMAVersionInteractor.swift */; };
+		815A5C9E1E2BD0E20046A393 /* AMAPickerViewInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5C901E2BD0E20046A393 /* AMAPickerViewInteractor.m */; };
+		815A5C9F1E2BD0E20046A393 /* AMAPickerViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5C961E2BD0E20046A393 /* AMAPickerViewConst.m */; };
+		815A5CA01E2BD0E20046A393 /* AMAPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5C991E2BD0E20046A393 /* AMAPickerView.m */; };
+		815A5CA11E2BD0E20046A393 /* AMAPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815A5C9A1E2BD0E20046A393 /* AMAPickerView.xib */; };
+		815A5CA21E2BD0E20046A393 /* AMAPickerViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5C9D1E2BD0E20046A393 /* AMAPickerViewViewModel.m */; };
 		815D0A591E1946A0000136C3 /* UIViewController+TggAlertExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D0A581E1946A0000136C3 /* UIViewController+TggAlertExtension.m */; };
 		8175AD581E0AE3C300FBE38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD571E0AE3C300FBE38A /* AppDelegate.swift */; };
 		8175AD5A1E0AE3C300FBE38A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD591E0AE3C300FBE38A /* ViewController.swift */; };
@@ -112,6 +117,17 @@
 		8151F60F1E18065700110C15 /* AMAVersionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAVersionManager.swift; sourceTree = "<group>"; };
 		8151F6111E18068500110C15 /* AMAVersionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAVersionService.swift; sourceTree = "<group>"; };
 		8151F6131E18069700110C15 /* AMAVersionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAVersionInteractor.swift; sourceTree = "<group>"; };
+		815A5C8F1E2BD0E20046A393 /* AMAPickerViewInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAPickerViewInteractor.h; sourceTree = "<group>"; };
+		815A5C901E2BD0E20046A393 /* AMAPickerViewInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAPickerViewInteractor.m; sourceTree = "<group>"; };
+		815A5C921E2BD0E20046A393 /* AMAPickerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAPickerViewDelegate.h; sourceTree = "<group>"; };
+		815A5C931E2BD0E20046A393 /* AMAPickerViewService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAPickerViewService.h; sourceTree = "<group>"; };
+		815A5C951E2BD0E20046A393 /* AMAPickerViewConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAPickerViewConst.h; sourceTree = "<group>"; };
+		815A5C961E2BD0E20046A393 /* AMAPickerViewConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAPickerViewConst.m; sourceTree = "<group>"; };
+		815A5C981E2BD0E20046A393 /* AMAPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAPickerView.h; sourceTree = "<group>"; };
+		815A5C991E2BD0E20046A393 /* AMAPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAPickerView.m; sourceTree = "<group>"; };
+		815A5C9A1E2BD0E20046A393 /* AMAPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMAPickerView.xib; sourceTree = "<group>"; };
+		815A5C9C1E2BD0E20046A393 /* AMAPickerViewViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAPickerViewViewModel.h; sourceTree = "<group>"; };
+		815A5C9D1E2BD0E20046A393 /* AMAPickerViewViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAPickerViewViewModel.m; sourceTree = "<group>"; };
 		815D0A571E1946A0000136C3 /* UIViewController+TggAlertExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TggAlertExtension.h"; sourceTree = "<group>"; };
 		815D0A581E1946A0000136C3 /* UIViewController+TggAlertExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TggAlertExtension.m"; sourceTree = "<group>"; };
 		8175AD541E0AE3C300FBE38A /* PtpurExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PtpurExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +254,64 @@
 			path = "版本升级";
 			sourceTree = "<group>";
 		};
+		815A5C8D1E2BD0E20046A393 /* AMAPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				815A5C8E1E2BD0E20046A393 /* Interactor */,
+				815A5C911E2BD0E20046A393 /* Protocal */,
+				815A5C941E2BD0E20046A393 /* SupportingFiles */,
+				815A5C971E2BD0E20046A393 /* UserInterface */,
+				815A5C9B1E2BD0E20046A393 /* ViewModel */,
+			);
+			path = AMAPickerView;
+			sourceTree = "<group>";
+		};
+		815A5C8E1E2BD0E20046A393 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				815A5C8F1E2BD0E20046A393 /* AMAPickerViewInteractor.h */,
+				815A5C901E2BD0E20046A393 /* AMAPickerViewInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		815A5C911E2BD0E20046A393 /* Protocal */ = {
+			isa = PBXGroup;
+			children = (
+				815A5C921E2BD0E20046A393 /* AMAPickerViewDelegate.h */,
+				815A5C931E2BD0E20046A393 /* AMAPickerViewService.h */,
+			);
+			path = Protocal;
+			sourceTree = "<group>";
+		};
+		815A5C941E2BD0E20046A393 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				815A5C951E2BD0E20046A393 /* AMAPickerViewConst.h */,
+				815A5C961E2BD0E20046A393 /* AMAPickerViewConst.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		815A5C971E2BD0E20046A393 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				815A5C981E2BD0E20046A393 /* AMAPickerView.h */,
+				815A5C991E2BD0E20046A393 /* AMAPickerView.m */,
+				815A5C9A1E2BD0E20046A393 /* AMAPickerView.xib */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		815A5C9B1E2BD0E20046A393 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				815A5C9C1E2BD0E20046A393 /* AMAPickerViewViewModel.h */,
+				815A5C9D1E2BD0E20046A393 /* AMAPickerViewViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		8175AD4B1E0AE3C200FBE38A = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +335,7 @@
 		8175AD561E0AE3C300FBE38A /* PtpurExtensionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				815A5C8D1E2BD0E20046A393 /* AMAPickerView */,
 				8175AD8C1E0C267A00FBE38A /* Source */,
 				8151F60E1E18047200110C15 /* 版本升级 */,
 				8178222D1E1D42FE007D965B /* CurveView.h */,
@@ -560,6 +635,7 @@
 				8182B4BB1E0EA3D000D3A9CB /* 2.png in Resources */,
 				8175AD621E0AE3C300FBE38A /* LaunchScreen.storyboard in Resources */,
 				8182B4C01E0EA42C00D3A9CB /* 3.png in Resources */,
+				815A5CA11E2BD0E20046A393 /* AMAPickerView.xib in Resources */,
 				8182B4AE1E0E9AD200D3A9CB /* AMAInstructions.plist in Resources */,
 				8175AD5F1E0AE3C300FBE38A /* Assets.xcassets in Resources */,
 				8182B4B01E0E9AD200D3A9CB /* AMAInstructionsCell.xib in Resources */,
@@ -602,6 +678,7 @@
 				8151F6141E18069700110C15 /* AMAVersionInteractor.swift in Sources */,
 				8175ADC21E0C267A00FBE38A /* ConstraintMakerRelatable.swift in Sources */,
 				8182B4B21E0E9AD200D3A9CB /* AMAInstructionsView.swift in Sources */,
+				815A5C9E1E2BD0E20046A393 /* AMAPickerViewInteractor.m in Sources */,
 				8175ADCB1E0C267A00FBE38A /* Debugging.swift in Sources */,
 				8175ADB71E0C267A00FBE38A /* ConstraintItem.swift in Sources */,
 				8175ADC81E0C267A00FBE38A /* ConstraintView+Extensions.swift in Sources */,
@@ -614,6 +691,7 @@
 				8175ADC51E0C267A00FBE38A /* ConstraintPriorityTarget.swift in Sources */,
 				8175AD581E0AE3C300FBE38A /* AppDelegate.swift in Sources */,
 				813C61BB1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift in Sources */,
+				815A5CA21E2BD0E20046A393 /* AMAPickerViewViewModel.m in Sources */,
 				810C7E181E0ED817000C1B0F /* AMAInstructionFlowLayout.swift in Sources */,
 				8175ADBB1E0C267A00FBE38A /* ConstraintLayoutSupport.swift in Sources */,
 				8182B4AF1E0E9AD200D3A9CB /* AMAInstructionsCell.swift in Sources */,
@@ -630,6 +708,7 @@
 				8175ADB41E0C267A00FBE38A /* ConstraintDSL.swift in Sources */,
 				8175ADBC1E0C267A00FBE38A /* ConstraintLayoutSupportDSL.swift in Sources */,
 				813C61C21E15660100D31A72 /* AMASchemeManager.m in Sources */,
+				815A5C9F1E2BD0E20046A393 /* AMAPickerViewConst.m in Sources */,
 				8175ADB51E0C267A00FBE38A /* ConstraintInsets.swift in Sources */,
 				8182B4B11E0E9AD200D3A9CB /* AMAInstructionsHitView.swift in Sources */,
 				8175ADC11E0C267A00FBE38A /* ConstraintMakerPriortizable.swift in Sources */,
@@ -645,6 +724,7 @@
 				8182B4B41E0E9AD200D3A9CB /* AMAInstructionsViewModel.swift in Sources */,
 				8175ADB81E0C267A00FBE38A /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				8175ADC91E0C267A00FBE38A /* ConstraintView.swift in Sources */,
+				815A5CA01E2BD0E20046A393 /* AMAPickerView.m in Sources */,
 				8175ADBF1E0C267A00FBE38A /* ConstraintMakerExtendable.swift in Sources */,
 				8175ADBA1E0C267A00FBE38A /* ConstraintLayoutGuideDSL.swift in Sources */,
 				8175ADB21E0C267A00FBE38A /* ConstraintConstantTarget.swift in Sources */,
