@@ -22,6 +22,13 @@
 		815A5CA01E2BD0E20046A393 /* AMAPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5C991E2BD0E20046A393 /* AMAPickerView.m */; };
 		815A5CA11E2BD0E20046A393 /* AMAPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 815A5C9A1E2BD0E20046A393 /* AMAPickerView.xib */; };
 		815A5CA21E2BD0E20046A393 /* AMAPickerViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5C9D1E2BD0E20046A393 /* AMAPickerViewViewModel.m */; };
+		815A5CA51E2D16CD0046A393 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5CA41E2D16CD0046A393 /* FirstViewController.m */; };
+		815A5CA81E2D16D50046A393 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5CA71E2D16D50046A393 /* SecViewController.m */; };
+		815A5CAB1E2D16E80046A393 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5CAA1E2D16E80046A393 /* ThirdViewController.m */; };
+		815A5CAE1E2D16F70046A393 /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5CAD1E2D16F70046A393 /* FinalViewController.m */; };
+		815A5CB01E2D18BC0046A393 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 815A5CAF1E2D18BC0046A393 /* left_arrow.png */; };
+		815A5CB31E2D198E0046A393 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5CB21E2D198E0046A393 /* RootViewController.m */; };
+		815A5D0C1E2D21630046A393 /* UIViewController+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 815A5D0B1E2D21630046A393 /* UIViewController+Stack.m */; };
 		815D0A591E1946A0000136C3 /* UIViewController+TggAlertExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 815D0A581E1946A0000136C3 /* UIViewController+TggAlertExtension.m */; };
 		8175AD581E0AE3C300FBE38A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD571E0AE3C300FBE38A /* AppDelegate.swift */; };
 		8175AD5A1E0AE3C300FBE38A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175AD591E0AE3C300FBE38A /* ViewController.swift */; };
@@ -81,6 +88,10 @@
 		8182B4C01E0EA42C00D3A9CB /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BE1E0EA42C00D3A9CB /* 3.png */; };
 		8182B4C11E0EA42C00D3A9CB /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BF1E0EA42C00D3A9CB /* 4.png */; };
 		81CB88F61E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */; };
+		81D97CB21E51F9260093BFD1 /* TouchIDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D97CB11E51F9260093BFD1 /* TouchIDTableViewController.m */; };
+		81D97CB61E51FDB50093BFD1 /* AMATouchIDConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D97CB51E51FDB50093BFD1 /* AMATouchIDConst.m */; };
+		81D97CB91E51FE680093BFD1 /* AMATouchIDAuthenticationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D97CB81E51FE680093BFD1 /* AMATouchIDAuthenticationCenter.m */; };
+		81D97CBC1E5206E80093BFD1 /* AMATouchIDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D97CBB1E5206E80093BFD1 /* AMATouchIDRouter.m */; };
 		81E73FF71E11679400BC885F /* AMAMoreInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E73FF61E11679400BC885F /* AMAMoreInstructionsView.swift */; };
 		81E73FF91E11699900BC885F /* AMAMoreInstructionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E73FF81E11699900BC885F /* AMAMoreInstructionsView.xib */; };
 /* End PBXBuildFile section */
@@ -128,6 +139,19 @@
 		815A5C9A1E2BD0E20046A393 /* AMAPickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMAPickerView.xib; sourceTree = "<group>"; };
 		815A5C9C1E2BD0E20046A393 /* AMAPickerViewViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMAPickerViewViewModel.h; sourceTree = "<group>"; };
 		815A5C9D1E2BD0E20046A393 /* AMAPickerViewViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMAPickerViewViewModel.m; sourceTree = "<group>"; };
+		815A5CA31E2D16CD0046A393 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		815A5CA41E2D16CD0046A393 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		815A5CA61E2D16D50046A393 /* SecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
+		815A5CA71E2D16D50046A393 /* SecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
+		815A5CA91E2D16E80046A393 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		815A5CAA1E2D16E80046A393 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		815A5CAC1E2D16F70046A393 /* FinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
+		815A5CAD1E2D16F70046A393 /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
+		815A5CAF1E2D18BC0046A393 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		815A5CB11E2D198E0046A393 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		815A5CB21E2D198E0046A393 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		815A5D0A1E2D21630046A393 /* UIViewController+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Stack.h"; sourceTree = "<group>"; };
+		815A5D0B1E2D21630046A393 /* UIViewController+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Stack.m"; sourceTree = "<group>"; };
 		815D0A571E1946A0000136C3 /* UIViewController+TggAlertExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TggAlertExtension.h"; sourceTree = "<group>"; };
 		815D0A581E1946A0000136C3 /* UIViewController+TggAlertExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TggAlertExtension.m"; sourceTree = "<group>"; };
 		8175AD541E0AE3C300FBE38A /* PtpurExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PtpurExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +222,14 @@
 		8182B4BF1E0EA42C00D3A9CB /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		81CB88F41E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "Source/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FDFullscreenPopGesture.m"; path = "Source/UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		81D97CB01E51F9260093BFD1 /* TouchIDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDTableViewController.h; sourceTree = "<group>"; };
+		81D97CB11E51F9260093BFD1 /* TouchIDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchIDTableViewController.m; sourceTree = "<group>"; };
+		81D97CB41E51FDB50093BFD1 /* AMATouchIDConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMATouchIDConst.h; sourceTree = "<group>"; };
+		81D97CB51E51FDB50093BFD1 /* AMATouchIDConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMATouchIDConst.m; sourceTree = "<group>"; };
+		81D97CB71E51FE680093BFD1 /* AMATouchIDAuthenticationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMATouchIDAuthenticationCenter.h; sourceTree = "<group>"; };
+		81D97CB81E51FE680093BFD1 /* AMATouchIDAuthenticationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMATouchIDAuthenticationCenter.m; sourceTree = "<group>"; };
+		81D97CBA1E5206E80093BFD1 /* AMATouchIDRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMATouchIDRouter.h; sourceTree = "<group>"; };
+		81D97CBB1E5206E80093BFD1 /* AMATouchIDRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMATouchIDRouter.m; sourceTree = "<group>"; };
 		81E73FF61E11679400BC885F /* AMAMoreInstructionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAMoreInstructionsView.swift; sourceTree = "<group>"; };
 		81E73FF81E11699900BC885F /* AMAMoreInstructionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AMAMoreInstructionsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -349,16 +381,32 @@
 				81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */,
 				813C61BD1E1561BF00D31A72 /* SMSViewController.h */,
 				813C61BE1E1561BF00D31A72 /* SMSViewController.m */,
+				815A5CB11E2D198E0046A393 /* RootViewController.h */,
+				815A5CB21E2D198E0046A393 /* RootViewController.m */,
+				815A5CA31E2D16CD0046A393 /* FirstViewController.h */,
+				815A5CA41E2D16CD0046A393 /* FirstViewController.m */,
+				815A5CA61E2D16D50046A393 /* SecViewController.h */,
+				815A5CA71E2D16D50046A393 /* SecViewController.m */,
+				815A5CA91E2D16E80046A393 /* ThirdViewController.h */,
+				815A5CAA1E2D16E80046A393 /* ThirdViewController.m */,
+				815A5CAC1E2D16F70046A393 /* FinalViewController.h */,
+				815A5CAD1E2D16F70046A393 /* FinalViewController.m */,
 				813C61C31E156AD400D31A72 /* SMSNavViewController.h */,
 				813C61C41E156AD400D31A72 /* SMSNavViewController.m */,
 				813C61C01E15660100D31A72 /* AMASchemeManager.h */,
 				813C61C11E15660100D31A72 /* AMASchemeManager.m */,
+				815A5D0A1E2D21630046A393 /* UIViewController+Stack.h */,
+				815A5D0B1E2D21630046A393 /* UIViewController+Stack.m */,
 				8175AD851E0AE45800FBE38A /* AMAStrategyIntrodutionView.swift */,
 				8175AD871E0AE46800FBE38A /* AMAStrategyIntrodutionView.xib */,
+				815A5CAF1E2D18BC0046A393 /* left_arrow.png */,
 				8182B4BC1E0EA42700D3A9CB /* 1.png */,
 				8182B4BA1E0EA3D000D3A9CB /* 2.png */,
 				8182B4BE1E0EA42C00D3A9CB /* 3.png */,
 				8182B4BF1E0EA42C00D3A9CB /* 4.png */,
+				81D97CB01E51F9260093BFD1 /* TouchIDTableViewController.h */,
+				81D97CB11E51F9260093BFD1 /* TouchIDTableViewController.m */,
+				81D97CB31E51FD970093BFD1 /* TouchID */,
 				81E73FF21E11677300BC885F /* 更多说明 */,
 				8182B49F1E0E9AD200D3A9CB /* 详情说明 */,
 				8175AD5B1E0AE3C300FBE38A /* Main.storyboard */,
@@ -494,6 +542,19 @@
 				8182B4B81E0EA34700D3A9CB /* AMAInstructionEntity.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		81D97CB31E51FD970093BFD1 /* TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				81D97CB41E51FDB50093BFD1 /* AMATouchIDConst.h */,
+				81D97CB51E51FDB50093BFD1 /* AMATouchIDConst.m */,
+				81D97CB71E51FE680093BFD1 /* AMATouchIDAuthenticationCenter.h */,
+				81D97CB81E51FE680093BFD1 /* AMATouchIDAuthenticationCenter.m */,
+				81D97CBA1E5206E80093BFD1 /* AMATouchIDRouter.h */,
+				81D97CBB1E5206E80093BFD1 /* AMATouchIDRouter.m */,
+			);
+			path = TouchID;
 			sourceTree = "<group>";
 		};
 		81E73FF21E11677300BC885F /* 更多说明 */ = {
@@ -640,6 +701,7 @@
 				8175AD5F1E0AE3C300FBE38A /* Assets.xcassets in Resources */,
 				8182B4B01E0E9AD200D3A9CB /* AMAInstructionsCell.xib in Resources */,
 				81E73FF91E11699900BC885F /* AMAMoreInstructionsView.xib in Resources */,
+				815A5CB01E2D18BC0046A393 /* left_arrow.png in Resources */,
 				8182B4C11E0EA42C00D3A9CB /* 4.png in Resources */,
 				8175AD5D1E0AE3C300FBE38A /* Main.storyboard in Resources */,
 				8175ADCC1E0C267A00FBE38A /* Info.plist in Resources */,
@@ -682,6 +744,8 @@
 				8175ADCB1E0C267A00FBE38A /* Debugging.swift in Sources */,
 				8175ADB71E0C267A00FBE38A /* ConstraintItem.swift in Sources */,
 				8175ADC81E0C267A00FBE38A /* ConstraintView+Extensions.swift in Sources */,
+				815A5D0C1E2D21630046A393 /* UIViewController+Stack.m in Sources */,
+				81D97CB91E51FE680093BFD1 /* AMATouchIDAuthenticationCenter.m in Sources */,
 				8151F6101E18065700110C15 /* AMAVersionManager.swift in Sources */,
 				8151F6121E18068500110C15 /* AMAVersionService.swift in Sources */,
 				8175ADC41E0C267A00FBE38A /* ConstraintOffsetTarget.swift in Sources */,
@@ -689,10 +753,12 @@
 				8175ADC01E0C267A00FBE38A /* ConstraintMakerFinalizable.swift in Sources */,
 				8182B4B91E0EA34700D3A9CB /* AMAInstructionEntity.swift in Sources */,
 				8175ADC51E0C267A00FBE38A /* ConstraintPriorityTarget.swift in Sources */,
+				81D97CB61E51FDB50093BFD1 /* AMATouchIDConst.m in Sources */,
 				8175AD581E0AE3C300FBE38A /* AppDelegate.swift in Sources */,
 				813C61BB1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift in Sources */,
 				815A5CA21E2BD0E20046A393 /* AMAPickerViewViewModel.m in Sources */,
 				810C7E181E0ED817000C1B0F /* AMAInstructionFlowLayout.swift in Sources */,
+				81D97CBC1E5206E80093BFD1 /* AMATouchIDRouter.m in Sources */,
 				8175ADBB1E0C267A00FBE38A /* ConstraintLayoutSupport.swift in Sources */,
 				8182B4AF1E0E9AD200D3A9CB /* AMAInstructionsCell.swift in Sources */,
 				813C61B81E14120C00D31A72 /* AMAViewAnimationExtension.swift in Sources */,
@@ -702,20 +768,25 @@
 				8175ADCD1E0C267A00FBE38A /* LayoutConstraint.swift in Sources */,
 				8175ADBD1E0C267A00FBE38A /* ConstraintMaker.swift in Sources */,
 				815D0A591E1946A0000136C3 /* UIViewController+TggAlertExtension.m in Sources */,
+				815A5CAE1E2D16F70046A393 /* FinalViewController.m in Sources */,
 				8175ADB01E0C267A00FBE38A /* ConstraintAttributes.swift in Sources */,
 				813C61C51E156AD400D31A72 /* SMSNavViewController.m in Sources */,
 				8175ADCF1E0C267A00FBE38A /* UILayoutSupport+Extensions.swift in Sources */,
+				81D97CB21E51F9260093BFD1 /* TouchIDTableViewController.m in Sources */,
 				8175ADB41E0C267A00FBE38A /* ConstraintDSL.swift in Sources */,
 				8175ADBC1E0C267A00FBE38A /* ConstraintLayoutSupportDSL.swift in Sources */,
 				813C61C21E15660100D31A72 /* AMASchemeManager.m in Sources */,
 				815A5C9F1E2BD0E20046A393 /* AMAPickerViewConst.m in Sources */,
 				8175ADB51E0C267A00FBE38A /* ConstraintInsets.swift in Sources */,
 				8182B4B11E0E9AD200D3A9CB /* AMAInstructionsHitView.swift in Sources */,
+				815A5CAB1E2D16E80046A393 /* ThirdViewController.m in Sources */,
 				8175ADC11E0C267A00FBE38A /* ConstraintMakerPriortizable.swift in Sources */,
 				813C61BF1E1561BF00D31A72 /* SMSViewController.m in Sources */,
 				8175ADBE1E0C267A00FBE38A /* ConstraintMakerEditable.swift in Sources */,
+				815A5CA51E2D16CD0046A393 /* FirstViewController.m in Sources */,
 				8175ADB11E0C267A00FBE38A /* ConstraintConfig.swift in Sources */,
 				8178222F1E1D42FE007D965B /* CurveView.m in Sources */,
+				815A5CA81E2D16D50046A393 /* SecViewController.m in Sources */,
 				8175ADCA1E0C267A00FBE38A /* ConstraintViewDSL.swift in Sources */,
 				8182B4B31E0E9AD200D3A9CB /* AMAUIColorExtension.swift in Sources */,
 				8175ADB91E0C267A00FBE38A /* ConstraintLayoutGuide.swift in Sources */,
@@ -727,6 +798,7 @@
 				815A5CA01E2BD0E20046A393 /* AMAPickerView.m in Sources */,
 				8175ADBF1E0C267A00FBE38A /* ConstraintMakerExtendable.swift in Sources */,
 				8175ADBA1E0C267A00FBE38A /* ConstraintLayoutGuideDSL.swift in Sources */,
+				815A5CB31E2D198E0046A393 /* RootViewController.m in Sources */,
 				8175ADB21E0C267A00FBE38A /* ConstraintConstantTarget.swift in Sources */,
 				8175ADB31E0C267A00FBE38A /* ConstraintDescription.swift in Sources */,
 				8175ADC31E0C267A00FBE38A /* ConstraintMultiplierTarget.swift in Sources */,

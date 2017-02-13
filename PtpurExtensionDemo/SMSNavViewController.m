@@ -18,12 +18,13 @@
     [super viewDidLoad];
    // [[UINavigationBar appearance] setTintColor:[UIColor orangeColor]];
 
+    /*
     UILabel *titleView = [[UILabel alloc] init];
     titleView.backgroundColor = [UIColor greenColor];
     titleView.text = @"12313";
     titleView.frame = CGRectMake(0, 0, 300, 44);
     self.navigationItem.titleView = titleView;
-    
+    */
    // self.tabBarItem.title = @"tabTitle";
     //self.navigationItem.title = @"33333";
     

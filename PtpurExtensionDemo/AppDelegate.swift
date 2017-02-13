@@ -17,16 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // 设置窗口
-        //self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-      //  self.window.backgroundColor = [UIColor whiteColor];
-        //[self.window makeKeyAndVisible];
+//        self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//        self.window.backgroundColor = [UIColor whiteColor];
+//        [self.window makeKeyAndVisible];
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
         
         self.window?.rootViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()
         
-        UINavigationBar.appearance().setBackgroundImage(UIImage.imageWithColor(color: UIColor.orange), for: .default)
+        //UINavigationBar.appearance().setBackgroundImage(UIImage.imageWithColor(color: UIColor.orange), for: .default)
         
 //        if let tabBarVC = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController {
 //            tabBarVC.tgg_presentAlertView(withMainTitle: "第一次打开app", actionTitle: "好的")

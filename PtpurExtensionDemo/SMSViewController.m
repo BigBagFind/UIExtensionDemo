@@ -9,6 +9,7 @@
 #import "SMSViewController.h"
 #import <MessageUI/MessageUI.h>
 #import "AMASchemeManager.h"
+#import "FirstViewController.h"
 
 @interface SMSViewController () <MFMessageComposeViewControllerDelegate>
 
@@ -32,8 +33,10 @@
 
 
 - (IBAction)smsAction:(id)sender {
-    [[AMASchemeManager shareManager] smsWithViewController:self];
+  //  [[AMASchemeManager shareManager] smsWithViewController:self];
    // [self showMessageView];
+    FirstViewController *vc = [[FirstViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)viewDidLoad {
