@@ -87,6 +87,8 @@
 		8182B4BD1E0EA42700D3A9CB /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BC1E0EA42700D3A9CB /* 1.png */; };
 		8182B4C01E0EA42C00D3A9CB /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BE1E0EA42C00D3A9CB /* 3.png */; };
 		8182B4C11E0EA42C00D3A9CB /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BF1E0EA42C00D3A9CB /* 4.png */; };
+		8186AF711E9FE8CF001A3F04 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8186AF701E9FE8CF001A3F04 /* TextViewController.m */; };
+		8186AF741E9FE8DF001A3F04 /* NSMutableString+TagReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8186AF731E9FE8DF001A3F04 /* NSMutableString+TagReplace.m */; };
 		81CB88F61E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		81D97CB21E51F9260093BFD1 /* TouchIDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D97CB11E51F9260093BFD1 /* TouchIDTableViewController.m */; };
 		81D97CB61E51FDB50093BFD1 /* AMATouchIDConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D97CB51E51FDB50093BFD1 /* AMATouchIDConst.m */; };
@@ -220,6 +222,10 @@
 		8182B4BC1E0EA42700D3A9CB /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		8182B4BE1E0EA42C00D3A9CB /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		8182B4BF1E0EA42C00D3A9CB /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		8186AF6F1E9FE8CF001A3F04 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		8186AF701E9FE8CF001A3F04 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		8186AF721E9FE8DF001A3F04 /* NSMutableString+TagReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+TagReplace.h"; sourceTree = "<group>"; };
+		8186AF731E9FE8DF001A3F04 /* NSMutableString+TagReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+TagReplace.m"; sourceTree = "<group>"; };
 		81CB88F41E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "Source/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FDFullscreenPopGesture.m"; path = "Source/UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		81D97CB01E51F9260093BFD1 /* TouchIDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDTableViewController.h; sourceTree = "<group>"; };
@@ -347,6 +353,10 @@
 		8175AD4B1E0AE3C200FBE38A = {
 			isa = PBXGroup;
 			children = (
+				8186AF6F1E9FE8CF001A3F04 /* TextViewController.h */,
+				8186AF701E9FE8CF001A3F04 /* TextViewController.m */,
+				8186AF721E9FE8DF001A3F04 /* NSMutableString+TagReplace.h */,
+				8186AF731E9FE8DF001A3F04 /* NSMutableString+TagReplace.m */,
 				8175AD561E0AE3C300FBE38A /* PtpurExtensionDemo */,
 				8175AD6B1E0AE3C300FBE38A /* PtpurExtensionDemoTests */,
 				8175AD761E0AE3C300FBE38A /* PtpurExtensionDemoUITests */,
@@ -758,6 +768,7 @@
 				813C61BB1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift in Sources */,
 				815A5CA21E2BD0E20046A393 /* AMAPickerViewViewModel.m in Sources */,
 				810C7E181E0ED817000C1B0F /* AMAInstructionFlowLayout.swift in Sources */,
+				8186AF711E9FE8CF001A3F04 /* TextViewController.m in Sources */,
 				81D97CBC1E5206E80093BFD1 /* AMATouchIDRouter.m in Sources */,
 				8175ADBB1E0C267A00FBE38A /* ConstraintLayoutSupport.swift in Sources */,
 				8182B4AF1E0E9AD200D3A9CB /* AMAInstructionsCell.swift in Sources */,
@@ -798,6 +809,7 @@
 				815A5CA01E2BD0E20046A393 /* AMAPickerView.m in Sources */,
 				8175ADBF1E0C267A00FBE38A /* ConstraintMakerExtendable.swift in Sources */,
 				8175ADBA1E0C267A00FBE38A /* ConstraintLayoutGuideDSL.swift in Sources */,
+				8186AF741E9FE8DF001A3F04 /* NSMutableString+TagReplace.m in Sources */,
 				815A5CB31E2D198E0046A393 /* RootViewController.m in Sources */,
 				8175ADB21E0C267A00FBE38A /* ConstraintConstantTarget.swift in Sources */,
 				8175ADB31E0C267A00FBE38A /* ConstraintDescription.swift in Sources */,
@@ -957,6 +969,7 @@
 				DEVELOPMENT_TEAM = F7JN2J2BY4;
 				GCC_PREFIX_HEADER = ./PtpurExtensionDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = PtpurExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CoderTgg.PtpurExtensionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -974,6 +987,7 @@
 				DEVELOPMENT_TEAM = F7JN2J2BY4;
 				GCC_PREFIX_HEADER = ./PtpurExtensionDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = PtpurExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CoderTgg.PtpurExtensionDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

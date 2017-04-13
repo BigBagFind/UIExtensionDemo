@@ -22,6 +22,7 @@
 @implementation TouchIDTableViewController
 
 - (IBAction)switchAction:(id)sender {
+    self.indicator.hidesWhenStopped = YES;
     [self loadAuthentication];
 }
 
@@ -39,14 +40,19 @@
     NSError *authError = nil;
     NSString *myLocalizedReasonString = @"请按住Home键完成验证";
     // MARK: 判断设备是否支持指纹识别
-     [self.indicator startAnimating];
+    [self.indicator startAnimating];
     if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError])
     {
-        [self.indicator stopAnimating];
+        
         [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics localizedReason:myLocalizedReasonString reply:^(BOOL success, NSError * _Nullable error) {
             if(success)
             {
-                NSLog(@"指纹认证成功");
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.indicator stopAnimating];
+                    NSLog(@"指纹认证成功");
+                });
+               
                 
                 //weakSelf.helper.isAppCurrentLoginState = YES;
                 
@@ -55,6 +61,13 @@
             }
             else
             {
+                
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [self.indicator stopAnimating];
+                    NSLog(@"指纹认证成功");
+                });
+                
+         //       [self.indicator stopAnimating];
                // weakSelf.helper.isAppCurrentLoginState = NO;
                 NSLog(@"指纹认证失败，%@",error.description);
                 
@@ -133,26 +146,71 @@
     }
     else
     {
-        NSLog(@"设备不支持指纹");
-        NSLog(@"%ld", (long)authError.code);
-      //  weakSelf.helper.isAppCurrentLoginState = NO;
-        switch (authError.code)
-        {
-            case LAErrorTouchIDNotEnrolled:
+        if (authError) {
+            [self.indicator stopAnimating];
+            NSLog(@"设备不支持指纹");
+            NSLog(@"%ld", (long)authError.code);
+            //  weakSelf.helper.isAppCurrentLoginState = NO;
+            switch (authError.code)
             {
-                NSLog(@"Authentication could not start, because Touch ID has no enrolled fingers");
-                break;
+                case LAErrorTouchIDNotEnrolled:
+                {
+                    NSLog(@"Authentication could not start, because Touch ID has no enrolled fingers");
+                    break;
+                }
+                case LAErrorPasscodeNotSet:
+                {
+                    NSLog(@"Authentication could not start, because passcode is not set on the device");
+                    break;
+                }
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_9_0
+                case LAErrorTouchIDLockout: //Authentication was not successful, because there were too many failed Touch ID attempts and Touch ID is now locked. Passcode is required to unlock Touch ID, e.g. evaluating LAPolicyDeviceOwnerAuthenticationWithBiometrics will ask for passcode as a prerequisite 用户连续多次进行Touch ID验证失败，Touch ID被锁，需要用户输入密码解锁，先Touch ID验证密码
+                {
+                    [self.indicator startAnimating];
+                    [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthentication localizedReason:myLocalizedReasonString reply:^(BOOL success, NSError * _Nullable error) {
+                        
+                        
+                        if (error) {
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                [self.indicator stopAnimating];
+                                NSLog(@"指纹认证成功");
+                            });
+                            
+                            NSLog(@"解锁失败:%@",error);
+                        }
+                        
+                        if (success) {
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                [self.indicator stopAnimating];
+                                NSLog(@"指纹认证成功");
+                            });
+                            
+                            NSLog(@"解锁Touch ID");
+                            
+                        }
+                    }];
+                    NSLog(@"Touch ID被锁，需要用户输入密码解锁"); // -8 连续五次指纹识别错误，TouchID功能被锁定，下一次需要输入系统密码
+                }
+                    break;
+                case LAErrorAppCancel: // Authentication was canceled by application (e.g. invalidate was called while authentication was in progress) 如突然来了电话，电话应用进入前台，APP被挂起啦");
+                {
+                    NSLog(@"用户不能控制情况下APP被挂起"); // -9
+                }
+                    break;
+                case LAErrorInvalidContext: // LAContext passed to this call has been previously invalidated.
+                {
+                    NSLog(@"LAContext传递给这个调用之前已经失效"); // -10
+                }
+                    break;
+#else
+#endif
+                default:
+                {
+                    NSLog(@"TouchID not available");
+                    break;
+                }
             }
-            case LAErrorPasscodeNotSet:
-            {
-                NSLog(@"Authentication could not start, because passcode is not set on the device");
-                break;
-            }
-            default:
-            {
-                NSLog(@"TouchID not available");
-                break;
-            }
+
         }
     }
 }

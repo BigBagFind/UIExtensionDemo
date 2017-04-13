@@ -21,8 +21,8 @@ extern NSString *const AMATouchIDAuthenticationReason;
 extern NSString *const AMAErrorTouchIDNotEnrolled;
 
 /** 未设置密码 */
-NSString *const AMAErrorPasscodeNotSet;
+extern NSString *const AMAErrorPasscodeNotSet;
 
 /** 位置错误 */
-NSString *const AMAErrorTouchIDNotAvailable;
+extern NSString *const AMAErrorTouchIDNotAvailable;
 
