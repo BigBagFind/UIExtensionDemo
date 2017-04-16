@@ -48,7 +48,7 @@ extern  const CGFloat HXVTagViewAutomaticDimension;
 
 - (void)tagView:(HXVTagView *_Nonnull)tagView didSelectRow:(NSInteger)row;
 
-- (void)tagView:(HXVTagView *_Nonnull)tagView rowDidAnimate:(NSInteger)row animationOption:(BOOL)isEaseOut;
+- (void)tagView:(HXVTagView *_Nonnull)tagView rowDidAnimate:(NSInteger)row rowView:(UIView *_Nullable)view animationOption:(BOOL)isEaseOut;
 
 @end
 
@@ -78,6 +78,7 @@ extern  const CGFloat HXVTagViewAutomaticDimension;
 // Reloading whole view
 - (void)reloadData;
 
+- (void)changedDataSourceWithAnimated:(BOOL)animated;
 
 
 @end

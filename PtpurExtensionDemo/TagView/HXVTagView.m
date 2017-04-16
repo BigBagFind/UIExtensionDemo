@@ -20,6 +20,8 @@ const CGFloat   HXVTagViewDefaultItemHeight = 44;
 @interface HXVTagView ()
 
 @property (nonatomic, strong, readwrite) NSMutableArray *buttonArray;
+@property (nonatomic, strong, readwrite) NSMutableArray *preparedButtonArray;
+
 @property (nonatomic, strong, readwrite) NSMutableArray *rowHeightArray;
 @property (nonatomic, strong, readwrite) NSMutableArray *rowWidthArray;
 @property (nonatomic, strong, readwrite) NSMutableArray *titleArray;
@@ -37,8 +39,8 @@ const CGFloat   HXVTagViewDefaultItemHeight = 44;
     [_buttonArray enumerateObjectsUsingBlock:^(UIButton * _Nonnull button, NSUInteger idx, BOOL * _Nonnull stop) {
         __block UIButton *new = button;
         [UIView animateWithDuration:duration animations:^{
-            if ([_delegate respondsToSelector:@selector(tagView:rowDidAnimate:animationOption: )]) {
-                [_delegate tagView:self rowDidAnimate:idx animationOption:YES];
+            if ([_delegate respondsToSelector:@selector(tagView:rowDidAnimate:rowView:animationOption:)]) {
+                [_delegate tagView:self rowDidAnimate:idx rowView:button animationOption:YES];
             }
         } completion:^(BOOL finished) {
             new = nil;
@@ -47,10 +49,24 @@ const CGFloat   HXVTagViewDefaultItemHeight = 44;
 }
 
 - (void)rowEaseInWithDuration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
-    [_buttonArray enumerateObjectsUsingBlock:^(UIButton * _Nonnull button, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_preparedTitleArray removeAllObjects];
+    for (NSUInteger i = 0; i < _numberOfRows; i++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        button.titleLabel.font = HXVTagViewDefaultFont;
+        button.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [button setBackgroundImage:[[self class] imageWithColor:[UIColor colorWithWhite:1.0 alpha:0.08]] forState:UIControlStateNormal];
+        button.frame = (CGRect){0, i * _rowHeight, HXVTagViewDefaultItemWidth, _rowHeight};
+        [button setTitle:@"" forState:UIControlStateNormal];
+        [self addSubview:button];
+        button.layer.masksToBounds = YES;
+        button.layer.cornerRadius = 22;
+        [_preparedTitleArray addObject:button];
+    }
+    [_preparedTitleArray enumerateObjectsUsingBlock:^(UIButton * _Nonnull button, NSUInteger idx, BOOL * _Nonnull stop) {
         [UIView animateWithDuration:duration delay:delay options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            if ([_delegate respondsToSelector:@selector(tagView:rowDidAnimate:animationOption:)]) {
-                [_delegate tagView:self rowDidAnimate:idx animationOption:NO];
+            if ([_delegate respondsToSelector:@selector(tagView:rowDidAnimate:rowView:animationOption:)]) {
+                [_delegate tagView:self rowDidAnimate:idx rowView:button animationOption:NO];
             }
         } completion:nil];
     }];
@@ -194,6 +210,7 @@ const CGFloat   HXVTagViewDefaultItemHeight = 44;
     _minimumLineSpacing = 0;
     _numberOfRows = 0;
     _buttonArray = [@[] mutableCopy];
+    _preparedTitleArray = [@[] mutableCopy];
     _titleArray = [@[] mutableCopy];
     _preparedTitleArray = [@[] mutableCopy];
     _rowHeightArray = [@[] mutableCopy];

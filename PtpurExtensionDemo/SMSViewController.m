@@ -21,7 +21,13 @@
 @implementation SMSViewController
 
 
+- (IBAction)action:(UIButton *)sender {
+   
+}
 
+- (IBAction)actionsss:(id)sender {
+     [_tagView changedDataSourceWithAnimated:YES];
+}
 
 
 - (void)viewDidLoad {
@@ -30,12 +36,12 @@
     self.tabBarItem.title = @"..";
     self.view.backgroundColor = [UIColor blackColor];
     
-    HXVTagView *tagView = [[HXVTagView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height)];
-    tagView.dataSource = self;
-    tagView.delegate = self;
+    _tagView = [[HXVTagView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height)];
+    _tagView.dataSource = self;
+    _tagView.delegate = self;
     
     
-    [self.view addSubview:tagView];
+    [self.view addSubview:_tagView];
 }
 
 
@@ -75,8 +81,40 @@
     [tagView removeFromSuperview];
 }
 
-
-
+- (void)tagView:(HXVTagView *)tagView rowDidAnimate:(NSInteger)row rowView:(UIView *)view animationOption:(BOOL)isEaseOut {
+    if (isEaseOut) {
+        switch (row) {
+            case 0: case 2: {
+                CGRect rect = view.frame;
+                rect.origin.x = -self.view.frame.size.width;
+            }
+                break;
+            case 1: case 3: case 4: {
+                CGRect rect = view.frame;
+                rect.origin.x = self.view.frame.size.width;
+            }
+                break;
+            default:
+                break;
+        }
+    } else {
+        switch (row) {
+            case 0: case 2: {
+                CGRect rect = view.frame;
+                rect.origin.x = -self.view.frame.size.width;
+            }
+                break;
+            case 1: case 3: {
+                CGRect rect = view.frame;
+                rect.origin.x = self.view.frame.size.width;
+            }
+                break;
+            default:
+                view.center = self.view.center;
+                break;
+        }
+    }
+}
 
 
 
