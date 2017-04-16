@@ -10,12 +10,79 @@
 #import <MessageUI/MessageUI.h>
 #import "AMASchemeManager.h"
 #import "FirstViewController.h"
+#import "HXVTagView.h"
 
-@interface SMSViewController () <MFMessageComposeViewControllerDelegate>
+@interface SMSViewController () <MFMessageComposeViewControllerDelegate, HXVTagViewDelegate, HXVTagViewDataSource>
+
+@property (nonatomic, strong) HXVTagView *tagView;
 
 @end
 
 @implementation SMSViewController
+
+
+
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"navTitle";
+    self.tabBarItem.title = @"..";
+    self.view.backgroundColor = [UIColor blackColor];
+    
+    HXVTagView *tagView = [[HXVTagView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height)];
+    tagView.dataSource = self;
+    tagView.delegate = self;
+    
+    
+    [self.view addSubview:tagView];
+}
+
+
+
+- (NSInteger)numberOfRowsInTagView:(HXVTagView *)tagView {
+    return 5;
+}
+
+- (UIEdgeInsets)tagView:(HXVTagView *_Nonnull)tagView edgeInsetsForRow:(NSInteger)row {
+    switch (row) {
+        case 0: case 2:
+            return UIEdgeInsetsMake(0, 32, 0, 0);
+            break;
+        case 1: case 3:
+            return UIEdgeInsetsMake(0, 0, 0, 32);
+            break;
+    }
+    return UIEdgeInsetsZero;
+}
+
+
+- (CGFloat)tagView:(HXVTagView *)tagView widthForRow:(NSInteger)row {
+    return HXVTagViewAutomaticDimension;
+}
+
+- (NSString *)tagView:(HXVTagView *)tagView titleForRow:(NSInteger)row {
+    return @[@"12312312313",@"222",@"333",@"44",@"45555"][row];
+}
+
+
+- (NSString *)tagView:(HXVTagView *)tagView preparedTitleForRow:(NSInteger)row {
+    return @[@"66666",@"7777",@"8888888",@"9999999",@"11112312312312"][row];
+}
+
+
+- (void)tagView:(HXVTagView *)tagView didSelectRow:(NSInteger)row {
+    [tagView removeFromSuperview];
+}
+
+
+
+
+
+
+
+
+
 
 
 /**
@@ -39,13 +106,6 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.title = @"navTitle";
-    self.tabBarItem.title = @"..";
-    
-    
-}
 
 - (void)showMessageView
 {

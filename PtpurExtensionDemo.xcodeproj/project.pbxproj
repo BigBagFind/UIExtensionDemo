@@ -89,6 +89,7 @@
 		8182B4C11E0EA42C00D3A9CB /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8182B4BF1E0EA42C00D3A9CB /* 4.png */; };
 		8186AF711E9FE8CF001A3F04 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8186AF701E9FE8CF001A3F04 /* TextViewController.m */; };
 		8186AF741E9FE8DF001A3F04 /* NSMutableString+TagReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 8186AF731E9FE8DF001A3F04 /* NSMutableString+TagReplace.m */; };
+		8186AF781EA3991D001A3F04 /* HXVTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8186AF771EA3991D001A3F04 /* HXVTagView.m */; };
 		81CB88F61E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		81D97CB21E51F9260093BFD1 /* TouchIDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D97CB11E51F9260093BFD1 /* TouchIDTableViewController.m */; };
 		81D97CB61E51FDB50093BFD1 /* AMATouchIDConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D97CB51E51FDB50093BFD1 /* AMATouchIDConst.m */; };
@@ -120,8 +121,8 @@
 		813C61B71E14120C00D31A72 /* AMAViewAnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAViewAnimationExtension.swift; sourceTree = "<group>"; };
 		813C61BA1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAMoreInstructionInteractor.swift; sourceTree = "<group>"; };
 		813C61BC1E1561BE00D31A72 /* PtpurExtensionDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PtpurExtensionDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		813C61BD1E1561BF00D31A72 /* SMSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSViewController.h; sourceTree = "<group>"; };
-		813C61BE1E1561BF00D31A72 /* SMSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSViewController.m; sourceTree = "<group>"; };
+		813C61BD1E1561BF00D31A72 /* SMSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSViewController.h; path = ../SMSViewController.h; sourceTree = "<group>"; };
+		813C61BE1E1561BF00D31A72 /* SMSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSViewController.m; path = ../SMSViewController.m; sourceTree = "<group>"; };
 		813C61C01E15660100D31A72 /* AMASchemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMASchemeManager.h; sourceTree = "<group>"; };
 		813C61C11E15660100D31A72 /* AMASchemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMASchemeManager.m; sourceTree = "<group>"; };
 		813C61C31E156AD400D31A72 /* SMSNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSNavViewController.h; sourceTree = "<group>"; };
@@ -226,6 +227,8 @@
 		8186AF701E9FE8CF001A3F04 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		8186AF721E9FE8DF001A3F04 /* NSMutableString+TagReplace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+TagReplace.h"; sourceTree = "<group>"; };
 		8186AF731E9FE8DF001A3F04 /* NSMutableString+TagReplace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+TagReplace.m"; sourceTree = "<group>"; };
+		8186AF761EA3991D001A3F04 /* HXVTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXVTagView.h; sourceTree = "<group>"; };
+		8186AF771EA3991D001A3F04 /* HXVTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXVTagView.m; sourceTree = "<group>"; };
 		81CB88F41E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "Source/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FDFullscreenPopGesture.m"; path = "Source/UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		81D97CB01E51F9260093BFD1 /* TouchIDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchIDTableViewController.h; sourceTree = "<group>"; };
@@ -377,6 +380,7 @@
 		8175AD561E0AE3C300FBE38A /* PtpurExtensionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8186AF751EA39904001A3F04 /* TagView */,
 				815A5C8D1E2BD0E20046A393 /* AMAPickerView */,
 				8175AD8C1E0C267A00FBE38A /* Source */,
 				8151F60E1E18047200110C15 /* 版本升级 */,
@@ -389,8 +393,6 @@
 				815D0A581E1946A0000136C3 /* UIViewController+TggAlertExtension.m */,
 				81CB88F41E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.h */,
 				81CB88F51E17928B006C5D7A /* UINavigationController+FDFullscreenPopGesture.m */,
-				813C61BD1E1561BF00D31A72 /* SMSViewController.h */,
-				813C61BE1E1561BF00D31A72 /* SMSViewController.m */,
 				815A5CB11E2D198E0046A393 /* RootViewController.h */,
 				815A5CB21E2D198E0046A393 /* RootViewController.m */,
 				815A5CA31E2D16CD0046A393 /* FirstViewController.h */,
@@ -552,6 +554,17 @@
 				8182B4B81E0EA34700D3A9CB /* AMAInstructionEntity.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		8186AF751EA39904001A3F04 /* TagView */ = {
+			isa = PBXGroup;
+			children = (
+				8186AF761EA3991D001A3F04 /* HXVTagView.h */,
+				8186AF771EA3991D001A3F04 /* HXVTagView.m */,
+				813C61BD1E1561BF00D31A72 /* SMSViewController.h */,
+				813C61BE1E1561BF00D31A72 /* SMSViewController.m */,
+			);
+			path = TagView;
 			sourceTree = "<group>";
 		};
 		81D97CB31E51FD970093BFD1 /* TouchID */ = {
@@ -781,6 +794,7 @@
 				815D0A591E1946A0000136C3 /* UIViewController+TggAlertExtension.m in Sources */,
 				815A5CAE1E2D16F70046A393 /* FinalViewController.m in Sources */,
 				8175ADB01E0C267A00FBE38A /* ConstraintAttributes.swift in Sources */,
+				8186AF781EA3991D001A3F04 /* HXVTagView.m in Sources */,
 				813C61C51E156AD400D31A72 /* SMSNavViewController.m in Sources */,
 				8175ADCF1E0C267A00FBE38A /* UILayoutSupport+Extensions.swift in Sources */,
 				81D97CB21E51F9260093BFD1 /* TouchIDTableViewController.m in Sources */,
