@@ -12,9 +12,11 @@
 #import "FirstViewController.h"
 #import "HXVTagView.h"
 
-@interface SMSViewController () <MFMessageComposeViewControllerDelegate, HXVTagViewDelegate, HXVTagViewDataSource>
+@interface SMSViewController () <MFMessageComposeViewControllerDelegate, HXVTagViewDelegate, HXVTagViewDataSource, UITextViewDelegate>
 
 @property (nonatomic, strong) HXVTagView *tagView;
+
+@property (nonatomic, strong) UITextView *textView;
 
 @end
 
@@ -35,13 +37,37 @@
     self.title = @"navTitle";
     self.tabBarItem.title = @"..";
     self.view.backgroundColor = [UIColor blackColor];
+//    
+//    _tagView = [[HXVTagView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height)];
+//    _tagView.dataSource = self;
+//    _tagView.delegate = self;
+//    
+//    
+//    [self.view addSubview:_tagView];
     
-    _tagView = [[HXVTagView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height)];
-    _tagView.dataSource = self;
-    _tagView.delegate = self;
+    _textView = [[UITextView alloc] init];
+    _textView.delegate = self;
+    [self.view addSubview:_textView];
+   // _textView.userInteractionEnabled = NO;
+    _textView.text = @"klkllklklklklkl";
+    _textView.font = [UIFont systemFontOfSize:16];
+    CGFloat height = [_textView sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width, 99999)].height;
+    _textView.frame = CGRectMake(0, 80, [UIScreen mainScreen].bounds.size.width, height);
+    _textView.scrollEnabled = NO;
+    NSLog(@"%lf", height);
+    //_textView.textColor = [UIColor blackColor];
+    _textView.backgroundColor = [UIColor orangeColor];
     
     
-    [self.view addSubview:_tagView];
+    self.automaticallyAdjustsScrollViewInsets = NO;
+}
+
+
+- (void)textViewDidChange:(UITextView *)textView {
+    CGRect rect = _textView.frame;
+    rect.size.height = [_textView sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width, 99999)].height;
+    _textView.frame = rect;
+    NSLog(@"%lf", rect.size.height);
 }
 
 
