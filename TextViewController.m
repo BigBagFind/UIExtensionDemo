@@ -21,20 +21,27 @@
     [super viewDidLoad];
     
 
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:@"This is an example by www.baidu.com sdadad"];
     
-    [attributedString addAttribute:NSLinkAttributeName
-                             value:@"username://marcelofabri_"
-                             range:[[attributedString string] rangeOfString:@"www.baidu.com"]];
+    
+    
+    
+    
+    
+    
+//    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:@"This is an example by www.baidu.com sdadad"];
+//    
+//    [attributedString addAttribute:NSLinkAttributeName
+//                             value:@"username://marcelofabri_"
+//                             range:[[attributedString string] rangeOfString:@"www.baidu.com"]];
 //    NSDictionary *linkAttributes = @{NSForegroundColorAttributeName: [UIColor greenColor],
 //                                     NSUnderlineColorAttributeName: [UIColor redColor],
 //                                     NSUnderlineStyleAttributeName: @(NSUnderlineStyleThick)};
 //    
-    self.textView.attributedText = [attributedString copy];
-   // self.textView.linkTextAttributes = linkAttributes;
-    self.textView.editable = NO;
-    self.textView.delegate = self;
-    
+//    self.textView.attributedText = [attributedString copy];
+//   // self.textView.linkTextAttributes = linkAttributes;
+//    self.textView.editable = NO;
+//    self.textView.delegate = self;
+//    
 
     
     

@@ -11,12 +11,15 @@
 #import "AMASchemeManager.h"
 #import "FirstViewController.h"
 #import "HXVTagView.h"
+#import "HXVCategoryView.h"
 
-@interface SMSViewController () <MFMessageComposeViewControllerDelegate, HXVTagViewDelegate, HXVTagViewDataSource, UITextViewDelegate>
+@interface SMSViewController () <MFMessageComposeViewControllerDelegate, HXVTagViewDelegate, HXVTagViewDataSource, UITextViewDelegate, HXVCategoryViewDelegate , HXVCategoryViewDataSource>
 
 @property (nonatomic, strong) HXVTagView *tagView;
 
 @property (nonatomic, strong) UITextView *textView;
+
+@property (nonatomic, strong) HXVCategoryView *categoryView;
 
 @end
 
@@ -34,33 +37,57 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"navTitle";
-    self.tabBarItem.title = @"..";
-    self.view.backgroundColor = [UIColor blackColor];
-//    
+//    self.title = @"navTitle";
+//    self.tabBarItem.title = @"..";
+//    self.view.backgroundColor = [UIColor blackColor];
+////    
 //    _tagView = [[HXVTagView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height)];
 //    _tagView.dataSource = self;
 //    _tagView.delegate = self;
+////
+////    
+////    [self.view addSubview:_tagView];
+//    
+//    _textView = [[UITextView alloc] init];
+//    _textView.delegate = self;
+//    [self.view addSubview:_textView];
+//   // _textView.userInteractionEnabled = NO;
+//    _textView.text = @"klkllklklklklkl";
+//    _textView.font = [UIFont systemFontOfSize:16];
+//    CGFloat height = [_textView sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width, 99999)].height;
+//    _textView.frame = CGRectMake(0, 80, [UIScreen mainScreen].bounds.size.width, height);
+//    _textView.scrollEnabled = NO;
+//    NSLog(@"%lf", height);
+//    //_textView.textColor = [UIColor blackColor];
+//    _textView.backgroundColor = [UIColor orangeColor];
 //    
 //    
-//    [self.view addSubview:_tagView];
-    
-    _textView = [[UITextView alloc] init];
-    _textView.delegate = self;
-    [self.view addSubview:_textView];
-   // _textView.userInteractionEnabled = NO;
-    _textView.text = @"klkllklklklklkl";
-    _textView.font = [UIFont systemFontOfSize:16];
-    CGFloat height = [_textView sizeThatFits:CGSizeMake([UIScreen mainScreen].bounds.size.width, 99999)].height;
-    _textView.frame = CGRectMake(0, 80, [UIScreen mainScreen].bounds.size.width, height);
-    _textView.scrollEnabled = NO;
-    NSLog(@"%lf", height);
-    //_textView.textColor = [UIColor blackColor];
-    _textView.backgroundColor = [UIColor orangeColor];
+//    self.automaticallyAdjustsScrollViewInsets = NO;
     
     
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    _categoryView = [[HXVCategoryView alloc] init];
+    _categoryView.frame = CGRectMake(0, 64, self.view.frame.size.width, 600);
+    [self.view addSubview:_categoryView];
+    _categoryView.dataSource = self;
+    _categoryView.delegate = self;
+    _categoryView.backgroundColor = [UIColor greenColor];
+    
+    
+    [_categoryView reloadData];
 }
+
+
+////////////////
+
+- (NSInteger)numberOfElementInCategoryView:(HXVCategoryView *)categoryView {
+    return 5;
+}
+
+- (NSString *)categoryView:(HXVCategoryView *)categoryView titleForElement:(NSInteger)element {
+    return [NSString stringWithFormat:@"hahahL:%zd", element];
+}
+
+////////////////
 
 
 - (void)textViewDidChange:(UITextView *)textView {
