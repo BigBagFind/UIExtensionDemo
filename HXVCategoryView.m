@@ -96,6 +96,9 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
         button.tag = 100 + idx;
         [button addTarget:self action:@selector(categoryTitleAction:) forControlEvents:UIControlEventTouchUpInside];
         [_categoryBarView addSubview:button];
+        if (idx == 0) {
+            [button setTitleColor:_titleSelectedColor forState:UIControlStateNormal];
+        }
     }
     if (count > 0) {
         _indicatorLine = [[UIView alloc] initWithFrame:CGRectMake(0, HXVCategoryBarDefaultHeight - 2, itemWidth, 2)];
@@ -121,10 +124,14 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
 
 
 - (void)categoryTitleAction:(UIButton *)sender {
+    if (sender.tag == _currentIndex + 100) {
+        return;
+    }
     UIButton *lasted = [_categoryBarView viewWithTag:_currentIndex + 100];
     [lasted setTitleColor:_titleNormalColor forState:UIControlStateNormal];
     [sender setTitleColor:_titleSelectedColor forState:UIControlStateNormal];
     [self setIndicatorLineContentOffsetWithIndex:sender.tag - 100];
+    [_mainScrollView setContentOffset:CGPointMake((sender.tag - 100) * self.frame.size.width, 0) animated:YES];
     _currentIndex = sender.tag - 100;
 }
 
@@ -237,7 +244,7 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
     
 - (void)hxv_initialize {
     _titleNormalColor = HXVCategoryViewDefaultTintColor;
-    _titleHighlightedColor = HXVCategoryViewDefaultTintColor;
+    _titleHighlightedColor = nil;
     _titleSelectedColor = HXVCategoryViewDefaultSelectedColor;
     _currentIndex = 0;
 }
