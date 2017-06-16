@@ -70,10 +70,12 @@
     [self.view addSubview:_categoryView];
     _categoryView.dataSource = self;
     _categoryView.delegate = self;
-    _categoryView.backgroundColor = [UIColor greenColor];
+//    _categoryView.backgroundColor = [UIColor greenColor]; 
     
     
     [_categoryView reloadData];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 
@@ -85,6 +87,12 @@
 
 - (NSString *)categoryView:(HXVCategoryView *)categoryView titleForElement:(NSInteger)element {
     return [NSString stringWithFormat:@"hahahL:%zd", element];
+}
+
+- (UIView *)categoryView:(HXVCategoryView *)categoryView viewForElement:(NSInteger)element {
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor colorWithRed:1.0 green:arc4random() %256 / 255.0 blue:arc4random() %256 / 255.0 alpha:arc4random() %256 / 255.0];
+    return view;
 }
 
 ////////////////

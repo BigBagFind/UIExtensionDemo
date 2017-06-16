@@ -15,7 +15,7 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
 #define HXVCategoryViewDefaultTintColor         [UIColor orangeColor]
 #define HXVCategoryViewDefaultSelectedColor     [UIColor redColor]
 
-@interface HXVCategoryView ()
+@interface HXVCategoryView () <UIScrollViewDelegate>
 
 /**
  * categoryBarView
@@ -23,11 +23,15 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
 
 @property (nonatomic, strong) UIScrollView *categoryBarView;
 
+@property (nonatomic, strong) UIView *indicatorLine;
+
 @property (nonatomic, strong) UIColor *titleNormalColor;
 
 @property (nonatomic, strong) UIColor *titleHighlightedColor;
 
 @property (nonatomic, strong) UIColor *titleSelectedColor;
+
+@property (nonatomic, assign) NSUInteger currentIndex;
 /**
  * mainScrollView
  */
@@ -47,6 +51,7 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
 
 - (void)reloadData {
     [self reloadCategoryView];
+    [self reloadMainScrollView];
 }
 
 - (void)setCategoryTitleColor:(UIColor *_Nullable)color forState:(HXVCategoryTitleState)state {
@@ -69,8 +74,12 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
 #pragma mark - Private Method
 
 - (void)reloadCategoryView {
+    _currentIndex = 0;
     for (UIView *view in _categoryBarView.subviews) {
         [view removeFromSuperview];
+    }
+    if (_indicatorLine) {
+        _indicatorLine = nil;
     }
     NSUInteger count = [self numberOfElement];
     CGFloat itemWidth = self.frame.size.width / count;
@@ -80,11 +89,53 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitleColor:_titleNormalColor forState:UIControlStateNormal];
         [button setTitleColor:_titleHighlightedColor forState:UIControlStateHighlighted];
-        [button setTitleColor:_titleSelectedColor forState:UIControlStateSelected];
         [button setTitle:title forState:UIControlStateNormal];
-        button.frame = (CGRect){0, idx * itemWidth, itemWidth, HXVCategoryBarDefaultHeight};
+        button.frame = (CGRect){idx * itemWidth, 0, itemWidth, HXVCategoryBarDefaultHeight};
+        button.titleLabel.minimumScaleFactor = 0.5;
+        [button.titleLabel setAdjustsFontSizeToFitWidth:YES];
+        button.tag = 100 + idx;
+        [button addTarget:self action:@selector(categoryTitleAction:) forControlEvents:UIControlEventTouchUpInside];
         [_categoryBarView addSubview:button];
     }
+    if (count > 0) {
+        _indicatorLine = [[UIView alloc] initWithFrame:CGRectMake(0, HXVCategoryBarDefaultHeight - 2, itemWidth, 2)];
+        _indicatorLine.backgroundColor = _titleNormalColor;
+        [_categoryBarView addSubview:_indicatorLine];
+    }
+}
+
+- (void)reloadMainScrollView {
+    for (UIView *view in _mainScrollView.subviews) {
+        [view removeFromSuperview];
+    }
+    NSUInteger count = [self numberOfElement];
+    CGFloat itemWidth = self.frame.size.width;
+    CGFloat itemHeight = self.frame.size.height - HXVCategoryBarDefaultHeight;
+    _mainScrollView.contentSize = CGSizeMake(itemWidth * count, itemHeight);
+    for (NSUInteger idx = 0; idx < count; idx ++) {
+        UIView *view = [self viewForElement:idx];
+        view.frame = (CGRect){idx * itemWidth, 0, itemWidth, itemHeight};
+        [_mainScrollView addSubview:view];
+    }
+}
+
+
+- (void)categoryTitleAction:(UIButton *)sender {
+    UIButton *lasted = [_categoryBarView viewWithTag:_currentIndex + 100];
+    [lasted setTitleColor:_titleNormalColor forState:UIControlStateNormal];
+    [sender setTitleColor:_titleSelectedColor forState:UIControlStateNormal];
+    [self setIndicatorLineContentOffsetWithIndex:sender.tag - 100];
+    _currentIndex = sender.tag - 100;
+}
+
+- (void)setIndicatorLineContentOffsetWithIndex:(NSUInteger)index {
+    NSUInteger count = [self numberOfElement];
+    CGFloat itemWidth = self.frame.size.width / count;
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        CGRect rect = _indicatorLine.frame;
+        rect.origin.x = index * itemWidth;
+        _indicatorLine.frame = rect;
+    } completion:nil];
 }
 
 #pragma mark - HXVDataSource
@@ -120,6 +171,23 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
 }
 
 
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView == _mainScrollView) {
+        CGRect rect = _indicatorLine.frame;
+        rect.origin.x = scrollView.contentOffset.x / [self numberOfElement];
+        _indicatorLine.frame = rect;
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    if (scrollView == _mainScrollView) {
+        NSInteger index = scrollView.contentOffset.x / self.frame.size.width;
+        UIButton *button = (UIButton *)[self viewWithTag:index + 100];
+        [self categoryTitleAction:button];
+    }
+}
 
 #pragma mark - LifeCycle
 
@@ -146,10 +214,14 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
 - (void)hxv_initViews {
     _categoryBarView = [[UIScrollView alloc] initWithFrame:CGRectZero];
     _categoryBarView.scrollEnabled = NO;
+    _categoryBarView.contentOffset = CGPointZero;
     [self addSubview:_categoryBarView];
     
     _mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectZero];
     _mainScrollView.pagingEnabled = YES;
+    _mainScrollView.showsVerticalScrollIndicator = NO;
+    _mainScrollView.showsHorizontalScrollIndicator = NO;
+    _mainScrollView.delegate = self;
     [self addSubview:_mainScrollView];
 }
 
@@ -167,6 +239,7 @@ static CGFloat const HXVCategoryBarDefaultHeight = 44;
     _titleNormalColor = HXVCategoryViewDefaultTintColor;
     _titleHighlightedColor = HXVCategoryViewDefaultTintColor;
     _titleSelectedColor = HXVCategoryViewDefaultSelectedColor;
+    _currentIndex = 0;
 }
 
 

@@ -53,8 +53,8 @@ typedef NS_ENUM(NSInteger, HXVCategoryTitleState) {
 
 
 // USING WARNING!
-// The view depend on Masonry inside, the project should import it.
-
+// 1.The view depend on Masonry inside, the project should import it.
+// 2.Controller AutomaticallyAdjustsScrollViewInsets prefer @yes
 @interface HXVCategoryView : UIView
 
 // default is nil. weak reference
