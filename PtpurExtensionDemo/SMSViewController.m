@@ -12,6 +12,8 @@
 #import "FirstViewController.h"
 #import "HXVTagView.h"
 #import "HXVCategoryView.h"
+#import "SMSViewController.h"
+#import "HoverMainViewController.h"
 
 @interface SMSViewController () <MFMessageComposeViewControllerDelegate, HXVTagViewDelegate, HXVTagViewDataSource, UITextViewDelegate, HXVCategoryViewDelegate , HXVCategoryViewDataSource>
 
@@ -27,7 +29,11 @@
 
 
 - (IBAction)action:(UIButton *)sender {
-   
+
+    HoverMainViewController *vc = [[HoverMainViewController alloc] init];
+    vc.title = @"12312";
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (IBAction)actionsss:(id)sender {
@@ -67,7 +73,7 @@
     
     _categoryView = [[HXVCategoryView alloc] init];
     _categoryView.frame = CGRectMake(0, 64, self.view.frame.size.width, 600);
-    [self.view addSubview:_categoryView];
+  //  [self.view addSubview:_categoryView];
     _categoryView.dataSource = self;
     _categoryView.delegate = self;
 //    _categoryView.backgroundColor = [UIColor greenColor]; 

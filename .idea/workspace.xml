@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85f8b858-ee37-4b6f-9bfb-63b2ca0e0857" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HXVCategoryView.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HXVCategoryView.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASCompositeConstraint.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASCompositeConstraint.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASConstraint+Private.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASConstraint.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASConstraint.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASConstraintMaker.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASConstraintMaker.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASLayoutConstraint.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASLayoutConstraint.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASUtilities.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASViewAttribute.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASViewAttribute.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASViewConstraint.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/MASViewConstraint.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/Masonry.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/NSArray+MASAdditions.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/NSArray+MASAdditions.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/NSArray+MASShorthandAdditions.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/NSLayoutConstraint+MASDebugAdditions.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/NSLayoutConstraint+MASDebugAdditions.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/View+MASAdditions.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/View+MASAdditions.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/View+MASShorthandAdditions.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/ViewController+MASAdditions.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Masonry/ViewController+MASAdditions.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PtpurExtensionDemo.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/PtpurExtensionDemo.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PtpurExtensionDemo.xcodeproj/xcuserdata/Ladn.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/PtpurExtensionDemo.xcodeproj/xcuserdata/Ladn.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TextViewController.m" afterPath="$PROJECT_DIR$/TextViewController.m" />
-    </list>
+    <list default="true" id="85f8b858-ee37-4b6f-9bfb-63b2ca0e0857" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -64,8 +31,8 @@
       <file leaf-file-name="NSMutableString+TagReplace.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NSMutableString+TagReplace.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,7 +63,7 @@
     <option name="x" value="-1920" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -129,7 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -144,7 +111,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,11 +187,12 @@
       <updated>1497632295051</updated>
       <workItem from="1497632298407" duration="141000" />
       <workItem from="1497632444192" duration="24000" />
+      <workItem from="1497707144788" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165000" />
+    <option name="totallyTimeSpent" value="763000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -236,13 +204,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="1053" extended-state="6" />
+    <frame x="-1920" y="23" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.49625668" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.49625668" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2053476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20447284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -278,6 +247,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NSMutableString+TagReplace.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSMutableString+TagReplace.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HXVCategoryView.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NSMutableString+TagReplace.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -312,8 +305,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NSMutableString+TagReplace.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="152">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

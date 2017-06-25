@@ -9,7 +9,7 @@
 #import "TouchIDTableViewController.h"
 #import <LocalAuthentication/LocalAuthentication.h>
 
-
+#import "HoverMainViewController.h"
 @interface TouchIDTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UISwitch *openTouchId;
@@ -20,6 +20,13 @@
 @end
 
 @implementation TouchIDTableViewController
+
+- (IBAction)pushAction:(id)sender {
+    HoverMainViewController *vc = [[HoverMainViewController alloc] init];
+    vc.title = @"12312";
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (IBAction)switchAction:(id)sender {
     self.indicator.hidesWhenStopped = YES;
