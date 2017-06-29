@@ -61,9 +61,9 @@ typedef NS_ENUM(NSInteger, HXVTriangleDirection) {
             break;
         }
         case HXVTriangleDirectionDown: {
-            [path moveToPoint:CGPointMake(self.bounds.size.width / 2, 0)];
-            [path addLineToPoint:(CGPointMake(0, self.bounds.size.height))];
-            [path addLineToPoint:(CGPointMake(self.bounds.size.width, self.bounds.size.height ))];
+            [path moveToPoint:CGPointMake(self.bounds.size.width / 2, self.bounds.size.height)];
+            [path addLineToPoint:(CGPointMake(0, 0))];
+            [path addLineToPoint:(CGPointMake(self.bounds.size.width, 0))];
 
             break;
         }
@@ -111,8 +111,8 @@ typedef NS_ENUM(NSInteger, HXVTriangleDirection) {
     CGFloat height = [self stringHeight:displayText];
    
     if (frame.origin.y >= [UIScreen mainScreen].bounds.size.height / 2) {
-        _triangleView.frame = CGRectMake(frame.origin.x + frame.size.width / 2 - 8, frame.origin.y - frame.size.height - 16 - 4, 1, 1);
-        _messageView.frame = CGRectMake(16, _triangleView.frame.origin.y - height, [UIScreen mainScreen].bounds.size.width - 32, 1);
+        _triangleView.frame = CGRectMake(frame.origin.x + frame.size.width / 2 - 8, frame.origin.y - 12 - 4, 12, 12);
+        _messageView.frame = CGRectMake(16, _triangleView.frame.origin.y, [UIScreen mainScreen].bounds.size.width - 32, 1);
     } else {
         _triangleView.triangleDirection = HXVTriangleDirectionUp;
         _triangleView.frame = CGRectMake(frame.origin.x + frame.size.width / 2 - 8, frame.origin.y + frame.size.height + 4, 1, 1);
