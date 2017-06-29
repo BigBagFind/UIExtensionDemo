@@ -14,6 +14,7 @@
 #import "HXVCategoryView.h"
 #import "SMSViewController.h"
 #import "HoverMainViewController.h"
+#import "HXVTipView.h"
 
 @interface SMSViewController () <MFMessageComposeViewControllerDelegate, HXVTagViewDelegate, HXVTagViewDataSource, UITextViewDelegate, HXVCategoryViewDelegate , HXVCategoryViewDataSource>
 
@@ -29,11 +30,11 @@
 
 
 - (IBAction)action:(UIButton *)sender {
-
-    HoverMainViewController *vc = [[HoverMainViewController alloc] init];
-    vc.title = @"12312";
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    [self presentViewController:nav animated:YES completion:nil];
+    [HXVTipView tipViewShowInView:self.navigationController.view originView:sender displayText:@"哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈"];
+//    HoverMainViewController *vc = [[HoverMainViewController alloc] init];
+//    vc.title = @"12312";
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+//    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (IBAction)actionsss:(id)sender {

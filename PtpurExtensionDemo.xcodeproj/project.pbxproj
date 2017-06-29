@@ -96,23 +96,7 @@
 		81AC89BD1F001D11008AD04E /* HXVGrowthAbilityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89B41F001D11008AD04E /* HXVGrowthAbilityService.m */; };
 		81AC89BE1F001D11008AD04E /* HXVProfitAbilityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89B61F001D11008AD04E /* HXVProfitAbilityService.m */; };
 		81AC89BF1F001D11008AD04E /* HXVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89B91F001D11008AD04E /* HXVTableViewController.m */; };
-		81AC89E31F002042008AD04E /* BaseEnterpriseTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89C31F002042008AD04E /* BaseEnterpriseTableController.m */; };
-		81AC89E41F002042008AD04E /* EnterpriseCaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89C51F002042008AD04E /* EnterpriseCaseController.m */; };
-		81AC89E51F002042008AD04E /* EnterpriseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89C71F002042008AD04E /* EnterpriseController.m */; };
-		81AC89E61F002042008AD04E /* EnterpriseIntrodutionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89C91F002042008AD04E /* EnterpriseIntrodutionController.m */; };
-		81AC89E71F002042008AD04E /* EnterpriseSeedingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89CB1F002042008AD04E /* EnterpriseSeedingListController.m */; };
-		81AC89E81F002042008AD04E /* CaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89CE1F002042008AD04E /* CaseModel.m */; };
-		81AC89E91F002042008AD04E /* EntHonorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89D01F002042008AD04E /* EntHonorModel.m */; };
-		81AC89EA1F002042008AD04E /* EntSeedingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89D21F002042008AD04E /* EntSeedingModel.m */; };
-		81AC89EB1F002042008AD04E /* CaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89D51F002042008AD04E /* CaseCell.m */; };
-		81AC89EC1F002042008AD04E /* Enterprise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AC89D61F002042008AD04E /* Enterprise.storyboard */; };
-		81AC89ED1F002042008AD04E /* EnterpriseHonorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89D81F002042008AD04E /* EnterpriseHonorCell.m */; };
-		81AC89EE1F002042008AD04E /* EnterpriseIntroductionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89DA1F002042008AD04E /* EnterpriseIntroductionCell.m */; };
-		81AC89EF1F002042008AD04E /* EnterpriseSeedingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89DC1F002042008AD04E /* EnterpriseSeedingCell.m */; };
-		81AC89F01F002042008AD04E /* ImageBrower.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89DE1F002042008AD04E /* ImageBrower.m */; };
-		81AC89F11F002042008AD04E /* ImageBrower.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81AC89DF1F002042008AD04E /* ImageBrower.xib */; };
-		81AC89F21F002042008AD04E /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89E11F002042008AD04E /* LoadingCell.m */; };
-		81AC89F31F002042008AD04E /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81AC89E21F002042008AD04E /* LoadingCell.xib */; };
+		81AC89F61F055F16008AD04E /* HXVTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89F51F055F16008AD04E /* HXVTipView.m */; };
 		81BE6A531EF43E7800633A3E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81BE6A391EF43E7800633A3E /* Info.plist */; };
 		81BE6A541EF43E7800633A3E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BE6A3B1EF43E7800633A3E /* MASCompositeConstraint.m */; };
 		81BE6A551EF43E7800633A3E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BE6A3E1EF43E7800633A3E /* MASConstraint.m */; };
@@ -277,37 +261,8 @@
 		81AC89B71F001D11008AD04E /* HXVTableServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXVTableServiceProtocol.h; sourceTree = "<group>"; };
 		81AC89B81F001D11008AD04E /* HXVTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXVTableViewController.h; sourceTree = "<group>"; };
 		81AC89B91F001D11008AD04E /* HXVTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXVTableViewController.m; sourceTree = "<group>"; };
-		81AC89C21F002042008AD04E /* BaseEnterpriseTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseEnterpriseTableController.h; sourceTree = "<group>"; };
-		81AC89C31F002042008AD04E /* BaseEnterpriseTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseEnterpriseTableController.m; sourceTree = "<group>"; };
-		81AC89C41F002042008AD04E /* EnterpriseCaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseCaseController.h; sourceTree = "<group>"; };
-		81AC89C51F002042008AD04E /* EnterpriseCaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseCaseController.m; sourceTree = "<group>"; };
-		81AC89C61F002042008AD04E /* EnterpriseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseController.h; sourceTree = "<group>"; };
-		81AC89C71F002042008AD04E /* EnterpriseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseController.m; sourceTree = "<group>"; };
-		81AC89C81F002042008AD04E /* EnterpriseIntrodutionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseIntrodutionController.h; sourceTree = "<group>"; };
-		81AC89C91F002042008AD04E /* EnterpriseIntrodutionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseIntrodutionController.m; sourceTree = "<group>"; };
-		81AC89CA1F002042008AD04E /* EnterpriseSeedingListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseSeedingListController.h; sourceTree = "<group>"; };
-		81AC89CB1F002042008AD04E /* EnterpriseSeedingListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseSeedingListController.m; sourceTree = "<group>"; };
-		81AC89CD1F002042008AD04E /* CaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseModel.h; sourceTree = "<group>"; };
-		81AC89CE1F002042008AD04E /* CaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseModel.m; sourceTree = "<group>"; };
-		81AC89CF1F002042008AD04E /* EntHonorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntHonorModel.h; sourceTree = "<group>"; };
-		81AC89D01F002042008AD04E /* EntHonorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntHonorModel.m; sourceTree = "<group>"; };
-		81AC89D11F002042008AD04E /* EntSeedingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntSeedingModel.h; sourceTree = "<group>"; };
-		81AC89D21F002042008AD04E /* EntSeedingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntSeedingModel.m; sourceTree = "<group>"; };
-		81AC89D41F002042008AD04E /* CaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaseCell.h; sourceTree = "<group>"; };
-		81AC89D51F002042008AD04E /* CaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaseCell.m; sourceTree = "<group>"; };
-		81AC89D61F002042008AD04E /* Enterprise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Enterprise.storyboard; sourceTree = "<group>"; };
-		81AC89D71F002042008AD04E /* EnterpriseHonorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseHonorCell.h; sourceTree = "<group>"; };
-		81AC89D81F002042008AD04E /* EnterpriseHonorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseHonorCell.m; sourceTree = "<group>"; };
-		81AC89D91F002042008AD04E /* EnterpriseIntroductionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseIntroductionCell.h; sourceTree = "<group>"; };
-		81AC89DA1F002042008AD04E /* EnterpriseIntroductionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseIntroductionCell.m; sourceTree = "<group>"; };
-		81AC89DB1F002042008AD04E /* EnterpriseSeedingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterpriseSeedingCell.h; sourceTree = "<group>"; };
-		81AC89DC1F002042008AD04E /* EnterpriseSeedingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterpriseSeedingCell.m; sourceTree = "<group>"; };
-		81AC89DD1F002042008AD04E /* ImageBrower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageBrower.h; sourceTree = "<group>"; };
-		81AC89DE1F002042008AD04E /* ImageBrower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageBrower.m; sourceTree = "<group>"; };
-		81AC89DF1F002042008AD04E /* ImageBrower.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageBrower.xib; sourceTree = "<group>"; };
-		81AC89E01F002042008AD04E /* LoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCell.h; sourceTree = "<group>"; };
-		81AC89E11F002042008AD04E /* LoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCell.m; sourceTree = "<group>"; };
-		81AC89E21F002042008AD04E /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		81AC89F41F055F16008AD04E /* HXVTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXVTipView.h; sourceTree = "<group>"; };
+		81AC89F51F055F16008AD04E /* HXVTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXVTipView.m; sourceTree = "<group>"; };
 		81BE6A391EF43E7800633A3E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BE6A3A1EF43E7800633A3E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		81BE6A3B1EF43E7800633A3E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -674,6 +629,8 @@
 				8186AF771EA3991D001A3F04 /* HXVTagView.m */,
 				813C61BD1E1561BF00D31A72 /* SMSViewController.h */,
 				813C61BE1E1561BF00D31A72 /* SMSViewController.m */,
+				81AC89F41F055F16008AD04E /* HXVTipView.h */,
+				81AC89F51F055F16008AD04E /* HXVTipView.m */,
 			);
 			path = TagView;
 			sourceTree = "<group>";
@@ -681,7 +638,6 @@
 		81AC889B1EFFCA81008AD04E /* Hover&Tab */ = {
 			isa = PBXGroup;
 			children = (
-				81AC89C01F002042008AD04E /* Enterprise（企业介绍） */,
 				81AC89AD1F001D11008AD04E /* HoverMainViewController.h */,
 				81AC89AE1F001D11008AD04E /* HoverMainViewController.m */,
 				81AC89AF1F001D11008AD04E /* HXVAssessmentController.h */,
@@ -697,68 +653,6 @@
 				81AC89B91F001D11008AD04E /* HXVTableViewController.m */,
 			);
 			name = "Hover&Tab";
-			sourceTree = "<group>";
-		};
-		81AC89C01F002042008AD04E /* Enterprise（企业介绍） */ = {
-			isa = PBXGroup;
-			children = (
-				81AC89C11F002042008AD04E /* Controller */,
-				81AC89CC1F002042008AD04E /* Model */,
-				81AC89D31F002042008AD04E /* View */,
-			);
-			path = "Enterprise（企业介绍）";
-			sourceTree = "<group>";
-		};
-		81AC89C11F002042008AD04E /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				81AC89C21F002042008AD04E /* BaseEnterpriseTableController.h */,
-				81AC89C31F002042008AD04E /* BaseEnterpriseTableController.m */,
-				81AC89C41F002042008AD04E /* EnterpriseCaseController.h */,
-				81AC89C51F002042008AD04E /* EnterpriseCaseController.m */,
-				81AC89C61F002042008AD04E /* EnterpriseController.h */,
-				81AC89C71F002042008AD04E /* EnterpriseController.m */,
-				81AC89C81F002042008AD04E /* EnterpriseIntrodutionController.h */,
-				81AC89C91F002042008AD04E /* EnterpriseIntrodutionController.m */,
-				81AC89CA1F002042008AD04E /* EnterpriseSeedingListController.h */,
-				81AC89CB1F002042008AD04E /* EnterpriseSeedingListController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		81AC89CC1F002042008AD04E /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				81AC89CD1F002042008AD04E /* CaseModel.h */,
-				81AC89CE1F002042008AD04E /* CaseModel.m */,
-				81AC89CF1F002042008AD04E /* EntHonorModel.h */,
-				81AC89D01F002042008AD04E /* EntHonorModel.m */,
-				81AC89D11F002042008AD04E /* EntSeedingModel.h */,
-				81AC89D21F002042008AD04E /* EntSeedingModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		81AC89D31F002042008AD04E /* View */ = {
-			isa = PBXGroup;
-			children = (
-				81AC89D41F002042008AD04E /* CaseCell.h */,
-				81AC89D51F002042008AD04E /* CaseCell.m */,
-				81AC89D61F002042008AD04E /* Enterprise.storyboard */,
-				81AC89D71F002042008AD04E /* EnterpriseHonorCell.h */,
-				81AC89D81F002042008AD04E /* EnterpriseHonorCell.m */,
-				81AC89D91F002042008AD04E /* EnterpriseIntroductionCell.h */,
-				81AC89DA1F002042008AD04E /* EnterpriseIntroductionCell.m */,
-				81AC89DB1F002042008AD04E /* EnterpriseSeedingCell.h */,
-				81AC89DC1F002042008AD04E /* EnterpriseSeedingCell.m */,
-				81AC89DD1F002042008AD04E /* ImageBrower.h */,
-				81AC89DE1F002042008AD04E /* ImageBrower.m */,
-				81AC89DF1F002042008AD04E /* ImageBrower.xib */,
-				81AC89E01F002042008AD04E /* LoadingCell.h */,
-				81AC89E11F002042008AD04E /* LoadingCell.m */,
-				81AC89E21F002042008AD04E /* LoadingCell.xib */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		81BE6A381EF43E7800633A3E /* Masonry */ = {
@@ -949,7 +843,6 @@
 				815A5CA11E2BD0E20046A393 /* AMAPickerView.xib in Resources */,
 				8182B4AE1E0E9AD200D3A9CB /* AMAInstructions.plist in Resources */,
 				8175AD5F1E0AE3C300FBE38A /* Assets.xcassets in Resources */,
-				81AC89F11F002042008AD04E /* ImageBrower.xib in Resources */,
 				8182B4B01E0E9AD200D3A9CB /* AMAInstructionsCell.xib in Resources */,
 				81E73FF91E11699900BC885F /* AMAMoreInstructionsView.xib in Resources */,
 				81BE6A531EF43E7800633A3E /* Info.plist in Resources */,
@@ -957,8 +850,6 @@
 				8182B4C11E0EA42C00D3A9CB /* 4.png in Resources */,
 				8175AD5D1E0AE3C300FBE38A /* Main.storyboard in Resources */,
 				8175ADCC1E0C267A00FBE38A /* Info.plist in Resources */,
-				81AC89F31F002042008AD04E /* LoadingCell.xib in Resources */,
-				81AC89EC1F002042008AD04E /* Enterprise.storyboard in Resources */,
 				8175AD881E0AE46800FBE38A /* AMAStrategyIntrodutionView.xib in Resources */,
 				8182B4BD1E0EA42700D3A9CB /* 1.png in Resources */,
 			);
@@ -995,13 +886,11 @@
 				8151F6141E18069700110C15 /* AMAVersionInteractor.swift in Sources */,
 				8175ADC21E0C267A00FBE38A /* ConstraintMakerRelatable.swift in Sources */,
 				8182B4B21E0E9AD200D3A9CB /* AMAInstructionsView.swift in Sources */,
-				81AC89F21F002042008AD04E /* LoadingCell.m in Sources */,
 				815A5C9E1E2BD0E20046A393 /* AMAPickerViewInteractor.m in Sources */,
 				8175ADCB1E0C267A00FBE38A /* Debugging.swift in Sources */,
-				81AC89F01F002042008AD04E /* ImageBrower.m in Sources */,
 				8175ADB71E0C267A00FBE38A /* ConstraintItem.swift in Sources */,
+				81AC89F61F055F16008AD04E /* HXVTipView.m in Sources */,
 				8175ADC81E0C267A00FBE38A /* ConstraintView+Extensions.swift in Sources */,
-				81AC89E91F002042008AD04E /* EntHonorModel.m in Sources */,
 				815A5D0C1E2D21630046A393 /* UIViewController+Stack.m in Sources */,
 				81BE6A591EF43E7800633A3E /* MASViewConstraint.m in Sources */,
 				81D97CB91E51FE680093BFD1 /* AMATouchIDAuthenticationCenter.m in Sources */,
@@ -1014,7 +903,6 @@
 				8175ADC51E0C267A00FBE38A /* ConstraintPriorityTarget.swift in Sources */,
 				81D97CB61E51FDB50093BFD1 /* AMATouchIDConst.m in Sources */,
 				8175AD581E0AE3C300FBE38A /* AppDelegate.swift in Sources */,
-				81AC89E81F002042008AD04E /* CaseModel.m in Sources */,
 				813C61BB1E14131C00D31A72 /* AMAMoreInstructionInteractor.swift in Sources */,
 				815A5CA21E2BD0E20046A393 /* AMAPickerViewViewModel.m in Sources */,
 				810C7E181E0ED817000C1B0F /* AMAInstructionFlowLayout.swift in Sources */,
@@ -1026,7 +914,6 @@
 				8145C6E71E18E89F0054086A /* AMAVersionLocalRecordAgent.swift in Sources */,
 				81BE6A5B1EF43E7800633A3E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				81E73FF71E11679400BC885F /* AMAMoreInstructionsView.swift in Sources */,
-				81AC89EF1F002042008AD04E /* EnterpriseSeedingCell.m in Sources */,
 				8175ADC61E0C267A00FBE38A /* ConstraintRelatableTarget.swift in Sources */,
 				8175ADCD1E0C267A00FBE38A /* LayoutConstraint.swift in Sources */,
 				8175ADBD1E0C267A00FBE38A /* ConstraintMaker.swift in Sources */,
@@ -1052,12 +939,9 @@
 				8175ADC11E0C267A00FBE38A /* ConstraintMakerPriortizable.swift in Sources */,
 				813C61BF1E1561BF00D31A72 /* SMSViewController.m in Sources */,
 				81BE6A601EF43F2700633A3E /* HXVCategoryView.m in Sources */,
-				81AC89ED1F002042008AD04E /* EnterpriseHonorCell.m in Sources */,
-				81AC89E31F002042008AD04E /* BaseEnterpriseTableController.m in Sources */,
 				8175ADBE1E0C267A00FBE38A /* ConstraintMakerEditable.swift in Sources */,
 				815A5CA51E2D16CD0046A393 /* FirstViewController.m in Sources */,
 				81AC89BC1F001D11008AD04E /* HXVAssessmentService.m in Sources */,
-				81AC89EA1F002042008AD04E /* EntSeedingModel.m in Sources */,
 				8175ADB11E0C267A00FBE38A /* ConstraintConfig.swift in Sources */,
 				81BE6A571EF43E7800633A3E /* MASLayoutConstraint.m in Sources */,
 				8178222F1E1D42FE007D965B /* CurveView.m in Sources */,
@@ -1065,24 +949,18 @@
 				81BE6A581EF43E7800633A3E /* MASViewAttribute.m in Sources */,
 				8175ADCA1E0C267A00FBE38A /* ConstraintViewDSL.swift in Sources */,
 				8182B4B31E0E9AD200D3A9CB /* AMAUIColorExtension.swift in Sources */,
-				81AC89E61F002042008AD04E /* EnterpriseIntrodutionController.m in Sources */,
-				81AC89EB1F002042008AD04E /* CaseCell.m in Sources */,
-				81AC89E41F002042008AD04E /* EnterpriseCaseController.m in Sources */,
 				8175ADB91E0C267A00FBE38A /* ConstraintLayoutGuide.swift in Sources */,
 				8182B4AD1E0E9AD200D3A9CB /* AMAInstructionDisplayData.swift in Sources */,
 				8175ADAF1E0C267A00FBE38A /* Constraint.swift in Sources */,
 				8182B4B41E0E9AD200D3A9CB /* AMAInstructionsViewModel.swift in Sources */,
-				81AC89EE1F002042008AD04E /* EnterpriseIntroductionCell.m in Sources */,
 				81BE6A5C1EF43E7800633A3E /* View+MASAdditions.m in Sources */,
 				81BE6A541EF43E7800633A3E /* MASCompositeConstraint.m in Sources */,
 				8175ADB81E0C267A00FBE38A /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				81BE6A5D1EF43E7800633A3E /* ViewController+MASAdditions.m in Sources */,
 				8175ADC91E0C267A00FBE38A /* ConstraintView.swift in Sources */,
-				81AC89E71F002042008AD04E /* EnterpriseSeedingListController.m in Sources */,
 				815A5CA01E2BD0E20046A393 /* AMAPickerView.m in Sources */,
 				8175ADBF1E0C267A00FBE38A /* ConstraintMakerExtendable.swift in Sources */,
 				8175ADBA1E0C267A00FBE38A /* ConstraintLayoutGuideDSL.swift in Sources */,
-				81AC89E51F002042008AD04E /* EnterpriseController.m in Sources */,
 				81AC89BE1F001D11008AD04E /* HXVProfitAbilityService.m in Sources */,
 				81AC89BA1F001D11008AD04E /* HoverMainViewController.m in Sources */,
 				8186AF741E9FE8DF001A3F04 /* NSMutableString+TagReplace.m in Sources */,
