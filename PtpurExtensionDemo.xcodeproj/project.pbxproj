@@ -97,6 +97,7 @@
 		81AC89BE1F001D11008AD04E /* HXVProfitAbilityService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89B61F001D11008AD04E /* HXVProfitAbilityService.m */; };
 		81AC89BF1F001D11008AD04E /* HXVTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89B91F001D11008AD04E /* HXVTableViewController.m */; };
 		81AC89F61F055F16008AD04E /* HXVTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89F51F055F16008AD04E /* HXVTipView.m */; };
+		81AC89FF1F092915008AD04E /* HXVF10DetailHeaderHitView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AC89FE1F092915008AD04E /* HXVF10DetailHeaderHitView.m */; };
 		81BE6A531EF43E7800633A3E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81BE6A391EF43E7800633A3E /* Info.plist */; };
 		81BE6A541EF43E7800633A3E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BE6A3B1EF43E7800633A3E /* MASCompositeConstraint.m */; };
 		81BE6A551EF43E7800633A3E /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BE6A3E1EF43E7800633A3E /* MASConstraint.m */; };
@@ -263,6 +264,8 @@
 		81AC89B91F001D11008AD04E /* HXVTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXVTableViewController.m; sourceTree = "<group>"; };
 		81AC89F41F055F16008AD04E /* HXVTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXVTipView.h; sourceTree = "<group>"; };
 		81AC89F51F055F16008AD04E /* HXVTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXVTipView.m; sourceTree = "<group>"; };
+		81AC89FD1F092915008AD04E /* HXVF10DetailHeaderHitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HXVF10DetailHeaderHitView.h; sourceTree = "<group>"; };
+		81AC89FE1F092915008AD04E /* HXVF10DetailHeaderHitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HXVF10DetailHeaderHitView.m; sourceTree = "<group>"; };
 		81BE6A391EF43E7800633A3E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81BE6A3A1EF43E7800633A3E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		81BE6A3B1EF43E7800633A3E /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -424,6 +427,8 @@
 				8186AF731E9FE8DF001A3F04 /* NSMutableString+TagReplace.m */,
 				81BE6A5E1EF43F2700633A3E /* HXVCategoryView.h */,
 				81BE6A5F1EF43F2700633A3E /* HXVCategoryView.m */,
+				81AC89FD1F092915008AD04E /* HXVF10DetailHeaderHitView.h */,
+				81AC89FE1F092915008AD04E /* HXVF10DetailHeaderHitView.m */,
 				81BE6A381EF43E7800633A3E /* Masonry */,
 				8175AD561E0AE3C300FBE38A /* PtpurExtensionDemo */,
 				8175AD6B1E0AE3C300FBE38A /* PtpurExtensionDemoTests */,
@@ -912,6 +917,7 @@
 				8182B4AF1E0E9AD200D3A9CB /* AMAInstructionsCell.swift in Sources */,
 				813C61B81E14120C00D31A72 /* AMAViewAnimationExtension.swift in Sources */,
 				8145C6E71E18E89F0054086A /* AMAVersionLocalRecordAgent.swift in Sources */,
+				81AC89FF1F092915008AD04E /* HXVF10DetailHeaderHitView.m in Sources */,
 				81BE6A5B1EF43E7800633A3E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				81E73FF71E11679400BC885F /* AMAMoreInstructionsView.swift in Sources */,
 				8175ADC61E0C267A00FBE38A /* ConstraintRelatableTarget.swift in Sources */,
